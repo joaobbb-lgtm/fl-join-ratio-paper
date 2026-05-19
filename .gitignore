@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.venv/
+venv/
+fl_env/
+
+# Jupyter temporary files
+*.nbconvert.ipynb
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.run.xml
+*.bcf
+*.nav
+*.snm
+*.vrb
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large experiment artifacts
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.npy
+*.npz
+
+# Raw logs
+*.log
+cpu_usage.log
+gpu_usage.csv
+raw_log.txt

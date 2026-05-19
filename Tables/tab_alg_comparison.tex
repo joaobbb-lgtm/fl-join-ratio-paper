@@ -1,0 +1,42 @@
+\begin{table*}[t]
+\centering
+\caption{Comparative summary of the federated optimization algorithms evaluated in this study.}
+\label{tab:alg_comparison}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{3.0cm}p{4.0cm}p{4.5cm}p{4.8cm}}
+\toprule
+\textbf{Aspect} & \textbf{FedAvg} & \textbf{FedProx} & \textbf{SCAFFOLD} \\
+\midrule
+
+Core idea &
+Standard federated averaging baseline. &
+Federated optimization with proximal regularization. &
+Federated optimization with drift correction. \\
+
+Main mechanism &
+Aggregates local model updates from the selected clients through weighted averaging. &
+Adds a proximal term to the local objective to constrain client updates with respect to the global model. &
+Uses server-side and client-side control variates to reduce client drift caused by data heterogeneity. \\
+
+Main strength &
+Simple, widely used, and communication-efficient. &
+Improves local training stability under heterogeneous client data. &
+Provides stronger correction for statistical heterogeneity and client drift. \\
+
+Additional state &
+No additional correction variables are required. &
+No server-client control variates are required, but local objectives are modified. &
+Requires maintaining and updating control variates at both server and client levels. \\
+
+Role in this study &
+Serves as the reference baseline for analyzing the effect of the join ratio. &
+Tests whether proximal regularization improves the performance/cost trade-off. &
+Tests whether drift correction leads to more favorable operating points across join ratio values. \\
+
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

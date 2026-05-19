@@ -1,0 +1,63 @@
+\begin{figure*}[t]
+\centering
+\footnotesize
+\begin{tikzpicture}[
+    box/.style={
+        draw,
+        rounded corners=2pt,
+        align=center,
+        inner sep=3pt,
+        minimum height=9mm,
+        font=\footnotesize
+    },
+    smallbox/.style={
+        draw,
+        rounded corners=2pt,
+        align=center,
+        inner sep=3pt,
+        minimum height=8mm,
+        font=\scriptsize
+    },
+    arrow/.style={
+        -{Latex[length=2mm,width=1.5mm]},
+        thick
+    }
+]
+
+% ---------- row 1 ----------
+\node[box, text width=18mm] (data) at (-0.8,0)
+{\textbf{Dataset}\\FashionMNIST};
+
+\node[box, text width=22mm] (split) at (2.5,0)
+{\textbf{Federated split}\\100 clients\\non-IID};
+
+\node[box, text width=22mm] (alg) at (6,0)
+{\textbf{Algorithms}\\FedAvg\\FedProx\\SCAFFOLD};
+
+% ---------- row 2 ----------
+\node[box, text width=32mm] (jr) at (0,-2.15)
+{\textbf{Main variable}\\\textit{Join ratio}\\0.10, 0.25, 0.50, 0.75, 1.00};
+
+\node[box, text width=34mm] (train) at (5.4,-2.15)
+{\textbf{Fixed setup}\\50 global rounds\\5 local epochs\\5 repetitions};
+
+% ---------- outputs ----------
+\node[box, text width=28mm] (out) at (9.8,-1.05)
+{\textbf{Outputs}\\Best test acc.\\Time\\Est. energy\\Eff. (best acc./kJ)};
+
+% ---------- row 3 ----------
+\node[smallbox, text width=120mm] (env) at (4.9,-3.8)
+{\textbf{Environment \& monitoring}\\PFLlib, WSL2, PyTorch 2.1.0, \textit{pidstat} (CPU), \textit{nvidia-smi} (GPU)};
+
+% ---------- arrows ----------
+\draw[arrow] (data.east) -- (split.west);
+\draw[arrow] (split.east) -- (alg.west);
+\draw[arrow] (jr.east) -- (train.west);
+
+\draw[arrow] (alg.east) -- ++(0.55,0) |- (out.west);
+\draw[arrow] (train.east) -- ++(0.55,0) |- (out.west);
+
+\end{tikzpicture}
+\caption{Overview of the experimental protocol. The study isolates the \textit{join ratio} as the main variable while keeping the dataset partitioning strategy, training budget, and monitoring procedure fixed across configurations.}
+\label{fig:overview_protocol}
+\end{figure*}

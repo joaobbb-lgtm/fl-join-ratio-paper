@@ -1,0 +1,33 @@
+\begin{table}[t]
+\centering
+\caption{Experimental setup and simulation parameters.}
+\label{tab:parameters}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{ll}
+\toprule
+\textbf{Parameter} & \textbf{Value} \\
+\midrule
+Framework & PFLlib \\
+Dataset & FashionMNIST \\
+Model & CNN (FedAvgCNN) \\
+Optimization algorithms & FedAvg, FedProx, SCAFFOLD \\
+Number of clients & 100 \\
+\textit{Join ratio} values & 0.10, 0.25, 0.50, 0.75, 1.00 \\
+Clients per round & 10, 25, 50, 75, 100 \\
+Number of global rounds & 50 \\
+Local epochs & 5 \\
+Batch size & 10 \\
+Learning rate & 0.01 \\
+Data partition & non-IID, balanced, pathological \\
+Partition script parameters & \texttt{noniid balance pat} \\
+Repetitions per configuration & 5 \\
+Total configurations & 15 \\
+Total executions & 75 \\
+Execution environment & Local WSL2 environment \\
+Resource monitoring & \texttt{pidstat} and \texttt{nvidia-smi} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

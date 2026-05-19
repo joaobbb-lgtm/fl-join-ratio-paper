@@ -1,0 +1,25 @@
+\begin{table}[t]
+\caption{Performance and computational cost across algorithms and join ratios.}
+\label{tab:results}
+\begin{tabular}{llccc}
+\toprule
+Algorithm & Join Ratio & Accuracy (mean $\pm$ std) & Time median (s) & GPU mean (\%) \\
+\midrule
+FedAvg & 0.10 & 0.6946 $\pm$ 0.0073 & 1546 & 54.6 \\
+FedAvg & 0.25 & 0.7089 $\pm$ 0.0065 & 2840 & 73.6 \\
+FedAvg & 0.50 & 0.7145 $\pm$ 0.0006 & 5137 & 81.7 \\
+FedAvg & 0.75 & 0.7156 $\pm$ 0.0020 & 5373 & 77.5 \\
+FedAvg & 1.00 & 0.7152 $\pm$ 0.0006 & 6762 & 76.5 \\
+FedProx & 0.10 & 0.6987 $\pm$ 0.0068 & 1765 & 67.0 \\
+FedProx & 0.25 & 0.7064 $\pm$ 0.0038 & 2959 & 78.6 \\
+FedProx & 0.50 & 0.7124 $\pm$ 0.0027 & 5395 & 76.7 \\
+FedProx & 0.75 & 0.7150 $\pm$ 0.0026 & 6192 & 73.1 \\
+FedProx & 1.00 & 0.7157 $\pm$ 0.0009 & 8218 & 76.1 \\
+SCAFFOLD & 0.10 & \textbf{0.7340} $\pm$ 0.0063 & 1375 & 62.4 \\
+SCAFFOLD & 0.25 & \textbf{0.7392} $\pm$ 0.0049 & 2384 & 68.8 \\
+SCAFFOLD & 0.50 & \textbf{0.7440} $\pm$ 0.0040 & 3948 & 70.3 \\
+SCAFFOLD & 0.75 & \textbf{0.7527} $\pm$ 0.0015 & 5963 & 79.4 \\
+SCAFFOLD & 1.00 & \textbf{0.7595} $\pm$ 0.0012 & 7318 & 75.5 \\
+\bottomrule
+\end{tabular}
+\end{table}

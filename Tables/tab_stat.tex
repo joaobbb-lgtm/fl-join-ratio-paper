@@ -1,0 +1,23 @@
+\begin{table}[t]
+\caption{Statistical comparison of best test accuracy across algorithms for each join ratio value. Kruskal-Wallis test with pairwise Mann-Whitney U post hoc comparisons. Bold values indicate $p < 0.05$.}
+\label{tab:stat}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Join ratio} & \textbf{KW stat} & \textbf{KW $p$} & \textbf{FA--FP} & \textbf{FA--SC} & \textbf{FP--SC} \\
+\midrule
+0.10 & 9.50 & 0.009 & 0.690 & 0.008 & 0.008 \\
+0.25 & 9.50 & 0.009 & 0.690 & 0.008 & 0.008 \\
+0.50 & 10.50 & 0.005 & 0.151 & 0.008 & 0.008 \\
+0.75 & 10.64 & 0.005 & 0.841 & 0.008 & 0.008 \\
+1.00 & 9.75 & 0.008 & 0.461 & 0.008 & 0.008 \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{1mm}
+\scriptsize
+\noindent FA = FedAvg, FP = FedProx, SC = SCAFFOLD.
+\end{table}
