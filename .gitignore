@@ -49,3 +49,20 @@ Thumbs.db
 cpu_usage.log
 gpu_usage.csv
 raw_log.txt
+
+# Generated federated datasets
+*.npz
+code/PFLlib/dataset/*/train/
+code/PFLlib/dataset/*/test/
+
+# Models and experiment outputs
+code/PFLlib/system/models/
+code/PFLlib/results/
+*.pt
+*.pth
+*.h5
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
