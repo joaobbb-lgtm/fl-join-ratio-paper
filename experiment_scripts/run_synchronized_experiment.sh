@@ -17,6 +17,7 @@ fi
 ALGORITHM="${ALGORITHM:-FedAvg}"
 DATASET="${DATASET:-FashionMNIST}"
 MODEL="${MODEL:-CNN}"
+NUM_CLASSES="${NUM_CLASSES:-10}"
 DEVICE="${DEVICE:-cuda}"
 GLOBAL_ROUNDS="${GLOBAL_ROUNDS:-50}"
 NUM_CLIENTS="${NUM_CLIENTS:-100}"
@@ -117,7 +118,8 @@ save_name="${DATASET}_${ALGORITHM}_${EXPERIMENT_ID}"
 (
     cd "$PFLLIB_SYSTEM"
     "$FL_PYTHON" -u main.py \
-        -dev "$DEVICE" -data "$DATASET" -m "$MODEL" -algo "$ALGORITHM" \
+        -dev "$DEVICE" -data "$DATASET" -m "$MODEL" \
+    -ncl "$NUM_CLASSES" -algo "$ALGORITHM" \
         -gr "$GLOBAL_ROUNDS" -nc "$NUM_CLIENTS" -jr "$JOIN_RATIO" \
         -lbs "$BATCH_SIZE" -ls "$LOCAL_EPOCHS" -lr "$LEARNING_RATE" \
         --save_folder_name "$save_name"

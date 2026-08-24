@@ -76,3 +76,11 @@ data/CIC_DDoS2019/raw/
 
 # Regenerable PFLlib smoke-test dataset
 code/PFLlib/dataset/TabularSmoke/
+
+# Regenerable dissertation datasets
+code/PFLlib/dataset/TON_IoT_pilot/
+code/PFLlib/dataset/TON_IoT_seed*/
+code/PFLlib/dataset/CIC_DDoS2019_pilot/
+code/PFLlib/dataset/CIC_DDoS2019_seed*/
+data/TON_IoT/processed/
+data/CIC_DDoS2019/processed/
