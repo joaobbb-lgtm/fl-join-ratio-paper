@@ -1,0 +1,1970 @@
+{
+  "dataset": "CIC-DDoS2019",
+  "root": "data/CIC_DDoS2019/raw/csv",
+  "files": 18,
+  "total_rows": 70427637,
+  "malformed_rows": 0,
+  "feature_sampling_stride": 100,
+  "raw_feature_count": 87,
+  "label_counts": {
+    "DrDoS_DNS": 5071011,
+    "BENIGN": 113828,
+    "DrDoS_LDAP": 2179930,
+    "DrDoS_MSSQL": 4522492,
+    "DrDoS_NTP": 1202642,
+    "DrDoS_NetBIOS": 4093279,
+    "DrDoS_SNMP": 5159870,
+    "DrDoS_SSDP": 2610611,
+    "DrDoS_UDP": 3134645,
+    "Syn": 6473789,
+    "TFTP": 20082580,
+    "UDP-lag": 366461,
+    "WebDDoS": 439,
+    "NetBIOS": 3657497,
+    "LDAP": 1915122,
+    "MSSQL": 5787453,
+    "Portmap": 186960,
+    "UDP": 3867155,
+    "UDPLag": 1873
+  },
+  "identifier_columns_provisionally_excluded": [
+    "Destination IP",
+    "Flow ID",
+    "Source IP",
+    "Timestamp",
+    "Unnamed: 0"
+  ],
+  "fwd_header_length_comparison": {
+    "sampled": 704285,
+    "equal": 704285,
+    "different": 0
+  },
+  "file_summaries": [
+    {
+      "file": "01-12/DrDoS_DNS.csv",
+      "rows": 5074413,
+      "malformed_rows": 0,
+      "labels": {
+        "DrDoS_DNS": 5071011,
+        "BENIGN": 3402
+      }
+    },
+    {
+      "file": "01-12/DrDoS_LDAP.csv",
+      "rows": 2181542,
+      "malformed_rows": 0,
+      "labels": {
+        "DrDoS_LDAP": 2179930,
+        "BENIGN": 1612
+      }
+    },
+    {
+      "file": "01-12/DrDoS_MSSQL.csv",
+      "rows": 4524498,
+      "malformed_rows": 0,
+      "labels": {
+        "DrDoS_MSSQL": 4522492,
+        "BENIGN": 2006
+      }
+    },
+    {
+      "file": "01-12/DrDoS_NTP.csv",
+      "rows": 1217007,
+      "malformed_rows": 0,
+      "labels": {
+        "DrDoS_NTP": 1202642,
+        "BENIGN": 14365
+      }
+    },
+    {
+      "file": "01-12/DrDoS_NetBIOS.csv",
+      "rows": 4094986,
+      "malformed_rows": 0,
+      "labels": {
+        "DrDoS_NetBIOS": 4093279,
+        "BENIGN": 1707
+      }
+    },
+    {
+      "file": "01-12/DrDoS_SNMP.csv",
+      "rows": 5161377,
+      "malformed_rows": 0,
+      "labels": {
+        "DrDoS_SNMP": 5159870,
+        "BENIGN": 1507
+      }
+    },
+    {
+      "file": "01-12/DrDoS_SSDP.csv",
+      "rows": 2611374,
+      "malformed_rows": 0,
+      "labels": {
+        "DrDoS_SSDP": 2610611,
+        "BENIGN": 763
+      }
+    },
+    {
+      "file": "01-12/DrDoS_UDP.csv",
+      "rows": 3136802,
+      "malformed_rows": 0,
+      "labels": {
+        "DrDoS_UDP": 3134645,
+        "BENIGN": 2157
+      }
+    },
+    {
+      "file": "01-12/Syn.csv",
+      "rows": 1582681,
+      "malformed_rows": 0,
+      "labels": {
+        "Syn": 1582289,
+        "BENIGN": 392
+      }
+    },
+    {
+      "file": "01-12/TFTP.csv",
+      "rows": 20107827,
+      "malformed_rows": 0,
+      "labels": {
+        "TFTP": 20082580,
+        "BENIGN": 25247
+      }
+    },
+    {
+      "file": "01-12/UDPLag.csv",
+      "rows": 370605,
+      "malformed_rows": 0,
+      "labels": {
+        "UDP-lag": 366461,
+        "BENIGN": 3705,
+        "WebDDoS": 439
+      }
+    },
+    {
+      "file": "03-11/LDAP.csv",
+      "rows": 2113234,
+      "malformed_rows": 0,
+      "labels": {
+        "NetBIOS": 202919,
+        "BENIGN": 5124,
+        "LDAP": 1905191
+      }
+    },
+    {
+      "file": "03-11/MSSQL.csv",
+      "rows": 5775786,
+      "malformed_rows": 0,
+      "labels": {
+        "LDAP": 9931,
+        "BENIGN": 2794,
+        "MSSQL": 5763061
+      }
+    },
+    {
+      "file": "03-11/NetBIOS.csv",
+      "rows": 3455899,
+      "malformed_rows": 0,
+      "labels": {
+        "NetBIOS": 3454578,
+        "BENIGN": 1321
+      }
+    },
+    {
+      "file": "03-11/Portmap.csv",
+      "rows": 191694,
+      "malformed_rows": 0,
+      "labels": {
+        "BENIGN": 4734,
+        "Portmap": 186960
+      }
+    },
+    {
+      "file": "03-11/Syn.csv",
+      "rows": 4320541,
+      "malformed_rows": 0,
+      "labels": {
+        "Syn": 4284751,
+        "BENIGN": 35790
+      }
+    },
+    {
+      "file": "03-11/UDP.csv",
+      "rows": 3782206,
+      "malformed_rows": 0,
+      "labels": {
+        "MSSQL": 24392,
+        "BENIGN": 3134,
+        "UDP": 3754680
+      }
+    },
+    {
+      "file": "03-11/UDPLag.csv",
+      "rows": 725165,
+      "malformed_rows": 0,
+      "labels": {
+        "UDP": 112475,
+        "BENIGN": 4068,
+        "UDPLag": 1873,
+        "Syn": 606749
+      }
+    }
+  ],
+  "features": {
+    "Unnamed: 0": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 805240.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "425",
+        "90",
+        "537",
+        "2397",
+        "840"
+      ]
+    },
+    "Flow ID": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 704285,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": ">10000",
+      "examples": [
+        "172.16.0.5-192.168.50.1-634-60495-17",
+        "172.217.0.110-192.168.50.8-80-59134-6",
+        "172.16.0.5-192.168.50.1-634-23929-17",
+        "172.16.0.5-192.168.50.1-634-15786-17",
+        "172.16.0.5-192.168.50.1-61967-634-17"
+      ]
+    },
+    "Source IP": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 704285,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 139,
+      "examples": [
+        "172.16.0.5",
+        "192.168.50.8",
+        "192.168.50.1",
+        "192.168.50.6",
+        "192.168.50.7"
+      ]
+    },
+    "Source Port": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 65532.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "634",
+        "59134",
+        "50827",
+        "58440",
+        "826"
+      ]
+    },
+    "Destination IP": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 704285,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 280,
+      "examples": [
+        "192.168.50.1",
+        "172.217.0.110",
+        "172.16.0.5",
+        "4.2.2.4",
+        "192.168.50.6"
+      ]
+    },
+    "Destination Port": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 65535.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "60495",
+        "80",
+        "23929",
+        "15786",
+        "61967"
+      ]
+    },
+    "Protocol": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 17.0,
+      "unique_sampled": 3,
+      "examples": [
+        "17",
+        "6",
+        "0"
+      ]
+    },
+    "Timestamp": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 704285,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": ">10000",
+      "examples": [
+        "2018-12-01 10:51:39.813448",
+        "2018-12-01 10:51:43.312676",
+        "2018-12-01 10:51:47.458420",
+        "2018-12-01 10:51:52.662736",
+        "2018-12-01 10:51:57.820184"
+      ]
+    },
+    "Flow Duration": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 119999999.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "28415",
+        "95441625",
+        "35275",
+        "54065",
+        "1"
+      ]
+    },
+    "Total Fwd Packets": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 1.0,
+      "numeric_max": 99802.0,
+      "unique_sampled": 185,
+      "examples": [
+        "97",
+        "21",
+        "198",
+        "200",
+        "2"
+      ]
+    },
+    "Total Backward Packets": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 462.0,
+      "unique_sampled": 83,
+      "examples": [
+        "0",
+        "20",
+        "2",
+        "3",
+        "82"
+      ]
+    },
+    "Total Length of Fwd Packets": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 88000.0,
+      "unique_sampled": 1861,
+      "examples": [
+        "42680.0",
+        "20.0",
+        "87120.0",
+        "88000.0",
+        "880.0"
+      ]
+    },
+    "Total Length of Bwd Packets": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 441512.0,
+      "unique_sampled": 283,
+      "examples": [
+        "0.0",
+        "282.0",
+        "158.0",
+        "142.0",
+        "59898.0"
+      ]
+    },
+    "Fwd Packet Length Max": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 3491.0,
+      "unique_sampled": 1164,
+      "examples": [
+        "440.0",
+        "1.0",
+        "59.0",
+        "34.0",
+        "1472.0"
+      ]
+    },
+    "Fwd Packet Length Min": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1791.0,
+      "unique_sampled": 1142,
+      "examples": [
+        "440.0",
+        "0.0",
+        "59.0",
+        "34.0",
+        "1472.0"
+      ]
+    },
+    "Fwd Packet Length Mean": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1791.0,
+      "unique_sampled": 1786,
+      "examples": [
+        "440.0",
+        "0.9523809523809524",
+        "59.0",
+        "34.0",
+        "1472.0"
+      ]
+    },
+    "Fwd Packet Length Std": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1193.7052604309356,
+      "unique_sampled": 717,
+      "examples": [
+        "0.0",
+        "0.2182178902359924",
+        "33.143592414233034",
+        "16.1495869629665",
+        "21.87458607970274"
+      ]
+    },
+    "Bwd Packet Length Max": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 3560.0,
+      "unique_sampled": 189,
+      "examples": [
+        "0.0",
+        "141.0",
+        "79.0",
+        "71.0",
+        "2860.0"
+      ]
+    },
+    "Bwd Packet Length Min": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 520.0,
+      "unique_sampled": 105,
+      "examples": [
+        "0.0",
+        "141.0",
+        "79.0",
+        "71.0",
+        "102.0"
+      ]
+    },
+    "Bwd Packet Length Mean": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1690.526315789474,
+      "unique_sampled": 291,
+      "examples": [
+        "0.0",
+        "141.0",
+        "79.0",
+        "71.0",
+        "730.4634146341463"
+      ]
+    },
+    "Bwd Packet Length Std": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1351.1382967593274,
+      "unique_sampled": 195,
+      "examples": [
+        "0.0",
+        "917.1956479779424",
+        "340.5978014004797",
+        "19.39530298236605",
+        "565.2572423242358"
+      ]
+    },
+    "Flow Bytes/s": {
+      "sampled": 704285,
+      "missing": 2391,
+      "nan": 0,
+      "positive_inf": 19365,
+      "negative_inf": 0,
+      "numeric_values": 701894,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 2944000000.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "1502023.5790955483",
+        "0.20955217390734912",
+        "2469737.7746279235",
+        "1627670.3967446592",
+        "8.8E8"
+      ]
+    },
+    "Flow Packets/s": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 21756,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0596110409384288,
+      "numeric_max": 4000000.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "3413.689952489882",
+        "0.4295819565100657",
+        "5613.0403968816445",
+        "3699.2509016924073",
+        "2000000.0"
+      ]
+    },
+    "Flow IAT Mean": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 32000089.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "295.98958333333337",
+        "2386040.6249999995",
+        "179.0609137055837",
+        "271.68341708542715",
+        "1.0"
+      ]
+    },
+    "Flow IAT Std": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 30297638.94377745,
+      "unique_sampled": ">10000",
+      "examples": [
+        "500.95930068517794",
+        "4235881.507316171",
+        "223.34465072009968",
+        "657.6719311070242",
+        "0.0"
+      ]
+    },
+    "Flow IAT Max": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 78575198.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "3596.0",
+        "10019970.0",
+        "1391.0",
+        "5437.0",
+        "1.0"
+      ]
+    },
+    "Flow IAT Min": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 32000089.0,
+      "unique_sampled": 298,
+      "examples": [
+        "1.0",
+        "2.0",
+        "3.0",
+        "0.0",
+        "4.0"
+      ]
+    },
+    "Fwd IAT Total": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 119999999.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "28415.0",
+        "95441625.0",
+        "35275.0",
+        "54065.0",
+        "1.0"
+      ]
+    },
+    "Fwd IAT Mean": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 32000089.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "295.98958333333337",
+        "4772081.249999999",
+        "179.0609137055837",
+        "271.68341708542715",
+        "1.0"
+      ]
+    },
+    "Fwd IAT Std": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 30297638.94377745,
+      "unique_sampled": ">10000",
+      "examples": [
+        "500.95930068517794",
+        "5010906.87990462",
+        "223.34465072009968",
+        "657.6719311070242",
+        "0.0"
+      ]
+    },
+    "Fwd IAT Max": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 78575198.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "3596.0",
+        "10046430.0",
+        "1391.0",
+        "5437.0",
+        "1.0"
+      ]
+    },
+    "Fwd IAT Min": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 32000089.0,
+      "unique_sampled": 235,
+      "examples": [
+        "1.0",
+        "2.0",
+        "3.0",
+        "0.0",
+        "4.0"
+      ]
+    },
+    "Bwd IAT Total": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 119562158.0,
+      "unique_sampled": 3627,
+      "examples": [
+        "0.0",
+        "90308541.0",
+        "3.0",
+        "2.0",
+        "1287911.0"
+      ]
+    },
+    "Bwd IAT Mean": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 38156597.33333333,
+      "unique_sampled": 3637,
+      "examples": [
+        "0.0",
+        "4753081.105263158",
+        "3.0",
+        "2.0",
+        "1.0"
+      ]
+    },
+    "Bwd IAT Std": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 66089163.49322966,
+      "unique_sampled": 3575,
+      "examples": [
+        "0.0",
+        "5147477.654670488",
+        "51099.92462219321",
+        "651.9524522539969",
+        "219086.2376552593"
+      ]
+    },
+    "Bwd IAT Max": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 114469790.0,
+      "unique_sampled": 3626,
+      "examples": [
+        "0.0",
+        "10046403.0",
+        "3.0",
+        "2.0",
+        "1.0"
+      ]
+    },
+    "Bwd IAT Min": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 199.0,
+      "unique_sampled": 69,
+      "examples": [
+        "0.0",
+        "1.0",
+        "3.0",
+        "2.0",
+        "52.0"
+      ]
+    },
+    "Fwd PSH Flags": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1.0,
+      "unique_sampled": 2,
+      "examples": [
+        "0",
+        "1"
+      ]
+    },
+    "Bwd PSH Flags": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "Fwd URG Flags": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "Bwd URG Flags": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "Fwd Header Length": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": -212543795000.0,
+      "numeric_max": 88000.0,
+      "unique_sampled": 2365,
+      "examples": [
+        "-97",
+        "420",
+        "-210418357050",
+        "1600",
+        "0"
+      ]
+    },
+    "Bwd Header Length": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": -2125437950.0,
+      "numeric_max": 6364.0,
+      "unique_sampled": 137,
+      "examples": [
+        "0",
+        "640",
+        "64",
+        "60",
+        "40"
+      ]
+    },
+    "Fwd Packets/s": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 4000000.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "3413.689952489882",
+        "0.22002978260271647",
+        "5613.040396881645",
+        "3699.2509016924073",
+        "2000000.0"
+      ]
+    },
+    "Bwd Packets/s": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1000000.0,
+      "unique_sampled": 6415,
+      "examples": [
+        "0.0",
+        "0.20955217390734912",
+        "96.81010697516821",
+        "96.96029475929608",
+        "19801.980198019806"
+      ]
+    },
+    "Min Packet Length": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1472.0,
+      "unique_sampled": 1140,
+      "examples": [
+        "440.0",
+        "0.0",
+        "59.0",
+        "34.0",
+        "1472.0"
+      ]
+    },
+    "Max Packet Length": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 3560.0,
+      "unique_sampled": 1224,
+      "examples": [
+        "440.0",
+        "1.0",
+        "141.0",
+        "79.0",
+        "1472.0"
+      ]
+    },
+    "Packet Length Mean": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1529.5238095238094,
+      "unique_sampled": 2080,
+      "examples": [
+        "440.0",
+        "0.5000000000000001",
+        "91.8",
+        "52.0",
+        "1472.0"
+      ]
+    },
+    "Packet Length Std": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1219.2176482946115,
+      "unique_sampled": 812,
+      "examples": [
+        "0.0",
+        "0.5060608273474739",
+        "44.913249715423625",
+        "24.647515087732486",
+        "33.034407108046196"
+      ]
+    },
+    "Packet Length Variance": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1486491.6739130432,
+      "unique_sampled": 853,
+      "examples": [
+        "0.0",
+        "0.25609756097560976",
+        "2017.2",
+        "607.5",
+        "1091.2720529801325"
+      ]
+    },
+    "FIN Flag Count": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "SYN Flag Count": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1.0,
+      "unique_sampled": 2,
+      "examples": [
+        "0",
+        "1"
+      ]
+    },
+    "RST Flag Count": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1.0,
+      "unique_sampled": 2,
+      "examples": [
+        "0",
+        "1"
+      ]
+    },
+    "PSH Flag Count": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "ACK Flag Count": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1.0,
+      "unique_sampled": 2,
+      "examples": [
+        "0",
+        "1"
+      ]
+    },
+    "URG Flag Count": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1.0,
+      "unique_sampled": 2,
+      "examples": [
+        "0",
+        "1"
+      ]
+    },
+    "CWE Flag Count": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1.0,
+      "unique_sampled": 2,
+      "examples": [
+        "0",
+        "1"
+      ]
+    },
+    "ECE Flag Count": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "Down/Up Ratio": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 12.0,
+      "unique_sampled": 9,
+      "examples": [
+        "0.0",
+        "1.0",
+        "2.0",
+        "3.0",
+        "5.0"
+      ]
+    },
+    "Average Packet Size": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 2208.0,
+      "unique_sampled": 2310,
+      "examples": [
+        "444.5360824742268",
+        "0.5121951219512195",
+        "442.22222222222223",
+        "442.2",
+        "660.0"
+      ]
+    },
+    "Avg Fwd Segment Size": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1791.0,
+      "unique_sampled": 1722,
+      "examples": [
+        "440.0",
+        "0.9523809523809524",
+        "59.0",
+        "34.0",
+        "1472.0"
+      ]
+    },
+    "Avg Bwd Segment Size": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1690.526315789474,
+      "unique_sampled": 290,
+      "examples": [
+        "0.0",
+        "141.0",
+        "79.0",
+        "71.0",
+        "730.4634146341464"
+      ]
+    },
+    "Fwd Header Length.1": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": -212543795000.0,
+      "numeric_max": 88000.0,
+      "unique_sampled": 2365,
+      "examples": [
+        "-97",
+        "420",
+        "-210418357050",
+        "1600",
+        "0"
+      ]
+    },
+    "Fwd Avg Bytes/Bulk": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "Fwd Avg Packets/Bulk": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "Fwd Avg Bulk Rate": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "Bwd Avg Bytes/Bulk": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "Bwd Avg Packets/Bulk": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "Bwd Avg Bulk Rate": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 1,
+      "examples": [
+        "0"
+      ]
+    },
+    "Subflow Fwd Packets": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 1.0,
+      "numeric_max": 99802.0,
+      "unique_sampled": 185,
+      "examples": [
+        "97",
+        "21",
+        "198",
+        "200",
+        "2"
+      ]
+    },
+    "Subflow Fwd Bytes": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 88000.0,
+      "unique_sampled": 1861,
+      "examples": [
+        "42680",
+        "20",
+        "87120",
+        "88000",
+        "880"
+      ]
+    },
+    "Subflow Bwd Packets": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 462.0,
+      "unique_sampled": 83,
+      "examples": [
+        "0",
+        "20",
+        "2",
+        "3",
+        "82"
+      ]
+    },
+    "Subflow Bwd Bytes": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 441512.0,
+      "unique_sampled": 283,
+      "examples": [
+        "0",
+        "282",
+        "158",
+        "142",
+        "59898"
+      ]
+    },
+    "Init_Win_bytes_forward": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": -1.0,
+      "numeric_max": 65535.0,
+      "unique_sampled": 215,
+      "examples": [
+        "-1",
+        "16383",
+        "64",
+        "268",
+        "258"
+      ]
+    },
+    "Init_Win_bytes_backward": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": -1.0,
+      "numeric_max": 65535.0,
+      "unique_sampled": 180,
+      "examples": [
+        "-1",
+        "250",
+        "235",
+        "311",
+        "247"
+      ]
+    },
+    "act_data_pkt_fwd": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 199.0,
+      "unique_sampled": 176,
+      "examples": [
+        "96",
+        "19",
+        "197",
+        "199",
+        "1"
+      ]
+    },
+    "min_seg_size_forward": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": -1408237563.0,
+      "numeric_max": 1480.0,
+      "unique_sampled": 1403,
+      "examples": [
+        "-1",
+        "20",
+        "-1062718975",
+        "8",
+        "0"
+      ]
+    },
+    "Active Mean": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 16786536.6,
+      "unique_sampled": 2282,
+      "examples": [
+        "0.0",
+        "26464.33333333333",
+        "62105.0",
+        "283135.5",
+        "51045.09090909092"
+      ]
+    },
+    "Active Std": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 28536808.761129525,
+      "unique_sampled": 3612,
+      "examples": [
+        "0.0",
+        "26.05762844159041",
+        "6.363961030678928",
+        "76474.04378408995",
+        "28536808.761129525"
+      ]
+    },
+    "Active Max": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 67834732.0,
+      "unique_sampled": 1270,
+      "examples": [
+        "0.0",
+        "26499.0",
+        "62105.0",
+        "283140.0",
+        "281623.0"
+      ]
+    },
+    "Active Min": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 9254604.0,
+      "unique_sampled": 281,
+      "examples": [
+        "0.0",
+        "26418.0",
+        "62105.0",
+        "283131.0",
+        "27963.0"
+      ]
+    },
+    "Idle Mean": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 78575198.0,
+      "unique_sampled": 7786,
+      "examples": [
+        "0.0",
+        "10007816.888888888",
+        "52738455.0",
+        "55939502.0",
+        "9982991.090909092"
+      ]
+    },
+    "Idle Std": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 33797375.0302514,
+      "unique_sampled": 6907,
+      "examples": [
+        "0.0",
+        "6874.678091453277",
+        "2625088.6703210617",
+        "65828.75979912514",
+        "98.18350166902988"
+      ]
+    },
+    "Idle Max": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 78575198.0,
+      "unique_sampled": 7779,
+      "examples": [
+        "0.0",
+        "10019970.0",
+        "52738455.0",
+        "57795720.0",
+        "10002938.0"
+      ]
+    },
+    "Idle Min": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 78575198.0,
+      "unique_sampled": 7782,
+      "examples": [
+        "0.0",
+        "10004286.0",
+        "52738455.0",
+        "54083284.0",
+        "9784510.0"
+      ]
+    },
+    "SimillarHTTP": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704227,
+      "non_numeric_values": 58,
+      "numeric_ratio": 0.9999176469753012,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 31,
+      "examples": [
+        "0",
+        "205.174.165.72/c.php",
+        "ocsp.digicert.com/",
+        "2.gravatar.com/avatar/?s=48&d=mm&r=g",
+        "205.174.165.72null"
+      ]
+    },
+    "Inbound": {
+      "sampled": 704285,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 704285,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 1.0,
+      "unique_sampled": 2,
+      "examples": [
+        "1",
+        "0"
+      ]
+    }
+  }
+}

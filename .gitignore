@@ -69,3 +69,10 @@ __pycache__/
 code/PFLlib/dataset/FashionMNIST/rawdata/
 telemetry/logs/
 experiments/
+
+# Datasets originais da dissertação
+data/TON_IoT/raw/
+data/CIC_DDoS2019/raw/
+
+# Regenerable PFLlib smoke-test dataset
+code/PFLlib/dataset/TabularSmoke/

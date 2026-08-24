@@ -8,6 +8,7 @@ import warnings
 import numpy as np
 import torchvision
 import logging
+import json
 
 from flcore.servers.serveravg import FedAvg
 from flcore.servers.serverpFedMe import pFedMe
@@ -107,7 +108,35 @@ def run(args):
             elif "Cifar10" in args.dataset:
                 args.model = DNN(3*32*32, 100, num_classes=args.num_classes).to(args.device)
             else:
-                args.model = DNN(60, 20, num_classes=args.num_classes).to(args.device)
+                config_path = os.path.join("../dataset", args.dataset, "config.json")
+                input_dim = 60
+
+                if os.path.exists(config_path):
+                    with open(config_path, "r", encoding="utf-8") as f:
+                        dataset_config = json.load(f)
+
+                    if "num_features" in dataset_config:
+                        input_dim = int(dataset_config["num_features"])
+                        print(
+                            f"Using num_features={input_dim} "
+                            f"from {config_path}"
+                        )
+                    else:
+                        print(
+                            f"Warning: 'num_features' not found in {config_path}. "
+                            f"Using legacy default input_dim=60."
+                        )
+                else:
+                    print(
+                        f"Warning: dataset config not found at {config_path}. "
+                        f"Using legacy default input_dim=60."
+                    )
+
+                args.model = DNN(
+                    input_dim,
+                    20,
+                    num_classes=args.num_classes
+                ).to(args.device)
         
         elif model_str == "ResNet18":
             args.model = torchvision.models.resnet18(pretrained=False, num_classes=args.num_classes).to(args.device)

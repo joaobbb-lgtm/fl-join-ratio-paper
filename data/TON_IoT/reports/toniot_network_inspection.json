@@ -1,0 +1,1247 @@
+{
+  "dataset": "TON_IoT Processed Network Dataset",
+  "root": "data/TON_IoT/raw/Processed_Network_dataset",
+  "files": 23,
+  "total_rows": 22339021,
+  "malformed_rows": 0,
+  "feature_sampling_stride": 40,
+  "feature_count_after_uid_removal": 44,
+  "label_counts": {
+    "0": 796380,
+    "1": 21542641
+  },
+  "type_counts": {
+    "normal": 796380,
+    "scanning": 7140161,
+    "dos": 3375328,
+    "injection": 452659,
+    "ddos": 6165008,
+    "password": 1718568,
+    "xss": 2108944,
+    "ransomware": 72805,
+    "backdoor": 508116,
+    "mitm": 1052
+  },
+  "file_summaries": [
+    {
+      "file": "Network_dataset_1.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "0": 208679,
+        "1": 791321
+      },
+      "types": {
+        "normal": 208679,
+        "scanning": 791321
+      }
+    },
+    {
+      "file": "Network_dataset_2.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 994283,
+        "0": 5717
+      },
+      "types": {
+        "scanning": 994283,
+        "normal": 5717
+      }
+    },
+    {
+      "file": "Network_dataset_3.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 997180,
+        "0": 2820
+      },
+      "types": {
+        "scanning": 997180,
+        "normal": 2820
+      }
+    },
+    {
+      "file": "Network_dataset_4.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 993744,
+        "0": 6256
+      },
+      "types": {
+        "scanning": 993744,
+        "normal": 6256
+      }
+    },
+    {
+      "file": "Network_dataset_5.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 996343,
+        "0": 3657
+      },
+      "types": {
+        "scanning": 996343,
+        "normal": 3657
+      }
+    },
+    {
+      "file": "Network_dataset_6.csv",
+      "columns": 47,
+      "has_uid": true,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 986527,
+        "0": 13473
+      },
+      "types": {
+        "scanning": 986527,
+        "normal": 13473
+      }
+    },
+    {
+      "file": "Network_dataset_7.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 992501,
+        "0": 7499
+      },
+      "types": {
+        "scanning": 992501,
+        "normal": 7499
+      }
+    },
+    {
+      "file": "Network_dataset_8.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 978694,
+        "0": 21306
+      },
+      "types": {
+        "scanning": 388262,
+        "normal": 21306,
+        "dos": 590432
+      }
+    },
+    {
+      "file": "Network_dataset_9.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 975261,
+        "0": 24739
+      },
+      "types": {
+        "dos": 975261,
+        "normal": 24739
+      }
+    },
+    {
+      "file": "Network_dataset_10.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 969998,
+        "0": 30002
+      },
+      "types": {
+        "dos": 969998,
+        "normal": 30002
+      }
+    },
+    {
+      "file": "Network_dataset_11.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 964832,
+        "0": 35168
+      },
+      "types": {
+        "dos": 839637,
+        "normal": 35168,
+        "injection": 125195
+      }
+    },
+    {
+      "file": "Network_dataset_12.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 967194,
+        "0": 32806
+      },
+      "types": {
+        "injection": 327464,
+        "normal": 32806,
+        "ddos": 639730
+      }
+    },
+    {
+      "file": "Network_dataset_13.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 999083,
+        "0": 917
+      },
+      "types": {
+        "ddos": 999083,
+        "normal": 917
+      }
+    },
+    {
+      "file": "Network_dataset_14.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 999417,
+        "0": 583
+      },
+      "types": {
+        "ddos": 999417,
+        "normal": 583
+      }
+    },
+    {
+      "file": "Network_dataset_15.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 998940,
+        "0": 1060
+      },
+      "types": {
+        "ddos": 998940,
+        "normal": 1060
+      }
+    },
+    {
+      "file": "Network_dataset_16.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 998109,
+        "0": 1891
+      },
+      "types": {
+        "ddos": 998109,
+        "normal": 1891
+      }
+    },
+    {
+      "file": "Network_dataset_17.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 966289,
+        "0": 33711
+      },
+      "types": {
+        "ddos": 966289,
+        "normal": 33711
+      }
+    },
+    {
+      "file": "Network_dataset_18.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 950564,
+        "0": 49436
+      },
+      "types": {
+        "ddos": 563440,
+        "normal": 49436,
+        "password": 387124
+      }
+    },
+    {
+      "file": "Network_dataset_19.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 987292,
+        "0": 12708
+      },
+      "types": {
+        "password": 987292,
+        "normal": 12708
+      }
+    },
+    {
+      "file": "Network_dataset_20.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 978918,
+        "0": 21082
+      },
+      "types": {
+        "password": 344152,
+        "normal": 21082,
+        "xss": 634766
+      }
+    },
+    {
+      "file": "Network_dataset_21.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 985593,
+        "0": 14407
+      },
+      "types": {
+        "xss": 985593,
+        "normal": 14407
+      }
+    },
+    {
+      "file": "Network_dataset_22.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 1000000,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 765012,
+        "0": 234988
+      },
+      "types": {
+        "xss": 488585,
+        "normal": 234988,
+        "ransomware": 72805,
+        "backdoor": 203622
+      }
+    },
+    {
+      "file": "Network_dataset_23.csv",
+      "columns": 46,
+      "has_uid": false,
+      "rows": 339021,
+      "malformed_rows": 0,
+      "labels": {
+        "1": 305546,
+        "0": 33475
+      },
+      "types": {
+        "backdoor": 304494,
+        "normal": 33475,
+        "mitm": 1052
+      }
+    }
+  ],
+  "features": {
+    "ts": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 1554198358.0,
+      "numeric_max": 1556549155.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "1554198358",
+        "1554198414",
+        "1554198475",
+        "1554198534",
+        "1554198599"
+      ]
+    },
+    "src_ip": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 22,
+      "non_numeric_values": 558454,
+      "numeric_ratio": 3.939291930181422e-05,
+      "inferred_type": "categorical",
+      "numeric_min": 0.0,
+      "numeric_max": 0.0,
+      "unique_sampled": 769,
+      "examples": [
+        "3.122.49.24",
+        "192.168.1.152",
+        "192.168.1.79",
+        "192.168.1.133",
+        "192.168.1.250"
+      ]
+    },
+    "src_port": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 65535.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "1883",
+        "34296",
+        "1880",
+        "36116",
+        "47813"
+      ]
+    },
+    "dst_ip": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 558476,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 1440,
+      "examples": [
+        "192.168.1.152",
+        "192.168.1.190",
+        "192.168.1.255",
+        "224.0.0.251",
+        "192.168.1.193"
+      ]
+    },
+    "dst_port": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 65533.0,
+      "unique_sampled": ">10000",
+      "examples": [
+        "52976",
+        "10502",
+        "51782",
+        "53",
+        "15600"
+      ]
+    },
+    "proto": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 558476,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 3,
+      "examples": [
+        "tcp",
+        "udp",
+        "icmp"
+      ]
+    },
+    "service": {
+      "sampled": 558476,
+      "missing": 422862,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 135614,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 19,
+      "examples": [
+        "dns",
+        "ssl",
+        "http",
+        "dhcp",
+        "gssapi;smb;ntlm"
+      ]
+    },
+    "duration": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 80549.53026,
+      "unique_sampled": ">10000",
+      "examples": [
+        "80549.53026",
+        "0",
+        "0.001653",
+        "0.000562",
+        "13.107604"
+      ]
+    },
+    "src_bytes": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558454,
+      "non_numeric_values": 22,
+      "numeric_ratio": 0.9999606070806982,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 2824353188.0,
+      "unique_sampled": 3605,
+      "examples": [
+        "1762852",
+        "0",
+        "350",
+        "336",
+        "6474"
+      ]
+    },
+    "dst_bytes": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 4291916959.0,
+      "unique_sampled": 3482,
+      "examples": [
+        "41933215",
+        "0",
+        "298",
+        "474",
+        "130"
+      ]
+    },
+    "conn_state": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 558476,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 13,
+      "examples": [
+        "OTH",
+        "SHR",
+        "S0",
+        "RSTOS0",
+        "SF"
+      ]
+    },
+    "missed_bytes": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 4142182932.0,
+      "unique_sampled": 1130,
+      "examples": [
+        "0",
+        "2327",
+        "3869",
+        "5698",
+        "10462"
+      ]
+    },
+    "src_pkts": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 252181.0,
+      "unique_sampled": 354,
+      "examples": [
+        "252181",
+        "0",
+        "1",
+        "7",
+        "3"
+      ]
+    },
+    "src_ip_bytes": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 14911156.0,
+      "unique_sampled": 4221,
+      "examples": [
+        "14911156",
+        "0",
+        "63",
+        "546",
+        "420"
+      ]
+    },
+    "dst_pkts": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 23935.0,
+      "unique_sampled": 119,
+      "examples": [
+        "2",
+        "0",
+        "1",
+        "13",
+        "6"
+      ]
+    },
+    "dst_ip_bytes": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 15119135.0,
+      "unique_sampled": 3784,
+      "examples": [
+        "236",
+        "0",
+        "354",
+        "530",
+        "80"
+      ]
+    },
+    "dns_query": {
+      "sampled": 558476,
+      "missing": 521017,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 37459,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 1847,
+      "examples": [
+        "_googlecast._tcp.local",
+        "_sleep-proxy._udp.local",
+        "desktop-uciie91.local",
+        "_fb._tcp.local",
+        "_ipps._tcp.local"
+      ]
+    },
+    "dns_qclass": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 32769.0,
+      "unique_sampled": 3,
+      "examples": [
+        "0",
+        "32769",
+        "1"
+      ]
+    },
+    "dns_qtype": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 255.0,
+      "unique_sampled": 11,
+      "examples": [
+        "0",
+        "12",
+        "255",
+        "1",
+        "43"
+      ]
+    },
+    "dns_rcode": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 5.0,
+      "unique_sampled": 4,
+      "examples": [
+        "0",
+        "3",
+        "2",
+        "5"
+      ]
+    },
+    "dns_AA": {
+      "sampled": 558476,
+      "missing": 520675,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 37801,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 2,
+      "examples": [
+        "F",
+        "T"
+      ]
+    },
+    "dns_RD": {
+      "sampled": 558476,
+      "missing": 520675,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 37801,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 2,
+      "examples": [
+        "F",
+        "T"
+      ]
+    },
+    "dns_RA": {
+      "sampled": 558476,
+      "missing": 520675,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 37801,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 2,
+      "examples": [
+        "F",
+        "T"
+      ]
+    },
+    "dns_rejected": {
+      "sampled": 558476,
+      "missing": 520675,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 37801,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 2,
+      "examples": [
+        "F",
+        "T"
+      ]
+    },
+    "ssl_version": {
+      "sampled": 558476,
+      "missing": 557877,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 599,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 4,
+      "examples": [
+        "TLSv12",
+        "TLSv13",
+        "SSLv3",
+        "TLSv10"
+      ]
+    },
+    "ssl_cipher": {
+      "sampled": 558476,
+      "missing": 557877,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 599,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 5,
+      "examples": [
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384"
+      ]
+    },
+    "ssl_resumed": {
+      "sampled": 558476,
+      "missing": 557827,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 649,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 2,
+      "examples": [
+        "F",
+        "T"
+      ]
+    },
+    "ssl_established": {
+      "sampled": 558476,
+      "missing": 557827,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 649,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 2,
+      "examples": [
+        "F",
+        "T"
+      ]
+    },
+    "ssl_subject": {
+      "sampled": 558476,
+      "missing": 557918,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 558,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 1,
+      "examples": [
+        "CN=Mr Shepherd;OU=Security Shepherd Project;O=OWASP;L=Dublin;ST=Ireland;C=IE"
+      ]
+    },
+    "ssl_issuer": {
+      "sampled": 558476,
+      "missing": 557918,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 558,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 1,
+      "examples": [
+        "CN=Mr Shepherd;OU=Security Shepherd Project;O=OWASP;L=Dublin;ST=Ireland;C=IE"
+      ]
+    },
+    "http_trans_depth": {
+      "sampled": 558476,
+      "missing": 557840,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 636,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 1.0,
+      "numeric_max": 1.0,
+      "unique_sampled": 1,
+      "examples": [
+        "1"
+      ]
+    },
+    "http_method": {
+      "sampled": 558476,
+      "missing": 557840,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 636,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 2,
+      "examples": [
+        "GET",
+        "POST"
+      ]
+    },
+    "http_uri": {
+      "sampled": 558476,
+      "missing": 557840,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 636,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 50,
+      "examples": [
+        "/msdownload/update/v3/static/trustedr/en/pinrulesstl.cab?b3d98506e52475df",
+        "/upnp/control/ConnectionManager1",
+        "/icon_SML.jpg",
+        "/en-US/livetile/preinstall?region=US&appid=C98EA5B0842DBB9405BBF071E1DA76512D21FE36&FORM=Threshold",
+        "/icon_LRG.png"
+      ]
+    },
+    "http_referrer": {
+      "sampled": 558476,
+      "missing": 558476,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 0,
+      "numeric_ratio": null,
+      "inferred_type": "empty",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 0,
+      "examples": []
+    },
+    "http_version": {
+      "sampled": 558476,
+      "missing": 557853,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 623,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 1.1,
+      "numeric_max": 1.1,
+      "unique_sampled": 1,
+      "examples": [
+        "1.1"
+      ]
+    },
+    "http_request_body_len": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 300.0,
+      "unique_sampled": 10,
+      "examples": [
+        "0",
+        "300",
+        "128",
+        "40",
+        "42"
+      ]
+    },
+    "http_response_body_len": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 29073.0,
+      "unique_sampled": 36,
+      "examples": [
+        "0",
+        "7796",
+        "29073",
+        "1684",
+        "4294"
+      ]
+    },
+    "http_status_code": {
+      "sampled": 558476,
+      "missing": 0,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 558476,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 0.0,
+      "numeric_max": 404.0,
+      "unique_sampled": 8,
+      "examples": [
+        "0",
+        "200",
+        "206",
+        "404",
+        "302"
+      ]
+    },
+    "http_user_agent": {
+      "sampled": 558476,
+      "missing": 557840,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 636,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 106,
+      "examples": [
+        "Microsoft-CryptoAPI/10.0",
+        "Microsoft-Windows/10.0 UPnP/1.0 Microsoft-DLNA DLNADOC/1.50",
+        "User-Agent: Microsoft-DLNA DLNADOC/1.50",
+        "Microsoft-WNS/10.0",
+        "Microsoft NCSI"
+      ]
+    },
+    "http_orig_mime_types": {
+      "sampled": 558476,
+      "missing": 558415,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 61,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 2,
+      "examples": [
+        "application/soap+xml",
+        "text/plain"
+      ]
+    },
+    "http_resp_mime_types": {
+      "sampled": 558476,
+      "missing": 558293,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 183,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 6,
+      "examples": [
+        "application/vnd.ms-cab-compressed",
+        "application/xml",
+        "image/jpeg",
+        "image/png",
+        "text/plain"
+      ]
+    },
+    "weird_name": {
+      "sampled": 558476,
+      "missing": 558396,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 80,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 8,
+      "examples": [
+        "bad_TCP_checksum",
+        "data_before_established",
+        "active_connection_reuse",
+        "DNS_RR_unknown_type",
+        "bad_UDP_checksum"
+      ]
+    },
+    "weird_addl": {
+      "sampled": 558476,
+      "missing": 558442,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 34,
+      "non_numeric_values": 0,
+      "numeric_ratio": 1.0,
+      "inferred_type": "numeric",
+      "numeric_min": 46.0,
+      "numeric_max": 48.0,
+      "unique_sampled": 2,
+      "examples": [
+        "46",
+        "48"
+      ]
+    },
+    "weird_notice": {
+      "sampled": 558476,
+      "missing": 558396,
+      "nan": 0,
+      "positive_inf": 0,
+      "negative_inf": 0,
+      "numeric_values": 0,
+      "non_numeric_values": 80,
+      "numeric_ratio": 0.0,
+      "inferred_type": "categorical",
+      "numeric_min": null,
+      "numeric_max": null,
+      "unique_sampled": 1,
+      "examples": [
+        "F"
+      ]
+    }
+  }
+}

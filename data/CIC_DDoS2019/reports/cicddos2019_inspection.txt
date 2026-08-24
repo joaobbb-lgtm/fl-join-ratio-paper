@@ -1,0 +1,1079 @@
+==============================================================================
+CIC-DDoS2019 - RELATÓRIO DE INSPEÇÃO
+==============================================================================
+
+Diretório:               data/CIC_DDoS2019/raw/csv
+Arquivos:                18
+Registros válidos:       70,427,637
+Linhas problemáticas:    0
+Features brutas:         87
+Amostragem de features:  1 a cada 100 registros
+
+LABEL
+------------------------------------------------------------------------------
+'TFTP'                               20,082,580 ( 28.5152%)
+'Syn'                                 6,473,789 (  9.1921%)
+'MSSQL'                               5,787,453 (  8.2176%)
+'DrDoS_SNMP'                          5,159,870 (  7.3265%)
+'DrDoS_DNS'                           5,071,011 (  7.2003%)
+'DrDoS_MSSQL'                         4,522,492 (  6.4215%)
+'DrDoS_NetBIOS'                       4,093,279 (  5.8120%)
+'UDP'                                 3,867,155 (  5.4910%)
+'NetBIOS'                             3,657,497 (  5.1933%)
+'DrDoS_UDP'                           3,134,645 (  4.4509%)
+'DrDoS_SSDP'                          2,610,611 (  3.7068%)
+'DrDoS_LDAP'                          2,179,930 (  3.0953%)
+'LDAP'                                1,915,122 (  2.7193%)
+'DrDoS_NTP'                           1,202,642 (  1.7076%)
+'UDP-lag'                               366,461 (  0.5203%)
+'Portmap'                               186,960 (  0.2655%)
+'BENIGN'                                113,828 (  0.1616%)
+'UDPLag'                                  1,873 (  0.0027%)
+'WebDDoS'                                   439 (  0.0006%)
+
+COMPARAÇÃO: Fwd Header Length x Fwd Header Length.1
+------------------------------------------------------------------------------
+Amostras comparadas:     704,285
+Valores iguais:          704,285
+Valores diferentes:      0
+
+FEATURES - PERFIL DA AMOSTRA
+------------------------------------------------------------------------------
+
+[Unnamed: 0]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      805240.0
+  exemplos:             ['425', '90', '537', '2397', '840']
+
+[Flow ID]
+  tipo inferido:        categorical
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      >10000
+  exemplos:             ['172.16.0.5-192.168.50.1-634-60495-17', '172.217.0.110-192.168.50.8-80-59134-6', '172.16.0.5-192.168.50.1-634-23929-17', '172.16.0.5-192.168.50.1-634-15786-17', '172.16.0.5-192.168.50.1-61967-634-17']
+
+[Source IP]
+  tipo inferido:        categorical
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      139
+  exemplos:             ['172.16.0.5', '192.168.50.8', '192.168.50.1', '192.168.50.6', '192.168.50.7']
+
+[Source Port]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      65532.0
+  exemplos:             ['634', '59134', '50827', '58440', '826']
+
+[Destination IP]
+  tipo inferido:        categorical
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      280
+  exemplos:             ['192.168.50.1', '172.217.0.110', '172.16.0.5', '4.2.2.4', '192.168.50.6']
+
+[Destination Port]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      65535.0
+  exemplos:             ['60495', '80', '23929', '15786', '61967']
+
+[Protocol]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      3
+  mínimo numérico:      0.0
+  máximo numérico:      17.0
+  exemplos:             ['17', '6', '0']
+
+[Timestamp]
+  tipo inferido:        categorical
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      >10000
+  exemplos:             ['2018-12-01 10:51:39.813448', '2018-12-01 10:51:43.312676', '2018-12-01 10:51:47.458420', '2018-12-01 10:51:52.662736', '2018-12-01 10:51:57.820184']
+
+[Flow Duration]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      119999999.0
+  exemplos:             ['28415', '95441625', '35275', '54065', '1']
+
+[Total Fwd Packets]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      185
+  mínimo numérico:      1.0
+  máximo numérico:      99802.0
+  exemplos:             ['97', '21', '198', '200', '2']
+
+[Total Backward Packets]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      83
+  mínimo numérico:      0.0
+  máximo numérico:      462.0
+  exemplos:             ['0', '20', '2', '3', '82']
+
+[Total Length of Fwd Packets]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1861
+  mínimo numérico:      0.0
+  máximo numérico:      88000.0
+  exemplos:             ['42680.0', '20.0', '87120.0', '88000.0', '880.0']
+
+[Total Length of Bwd Packets]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      283
+  mínimo numérico:      0.0
+  máximo numérico:      441512.0
+  exemplos:             ['0.0', '282.0', '158.0', '142.0', '59898.0']
+
+[Fwd Packet Length Max]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1164
+  mínimo numérico:      0.0
+  máximo numérico:      3491.0
+  exemplos:             ['440.0', '1.0', '59.0', '34.0', '1472.0']
+
+[Fwd Packet Length Min]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1142
+  mínimo numérico:      0.0
+  máximo numérico:      1791.0
+  exemplos:             ['440.0', '0.0', '59.0', '34.0', '1472.0']
+
+[Fwd Packet Length Mean]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1786
+  mínimo numérico:      0.0
+  máximo numérico:      1791.0
+  exemplos:             ['440.0', '0.9523809523809524', '59.0', '34.0', '1472.0']
+
+[Fwd Packet Length Std]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      717
+  mínimo numérico:      0.0
+  máximo numérico:      1193.7052604309356
+  exemplos:             ['0.0', '0.2182178902359924', '33.143592414233034', '16.1495869629665', '21.87458607970274']
+
+[Bwd Packet Length Max]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      189
+  mínimo numérico:      0.0
+  máximo numérico:      3560.0
+  exemplos:             ['0.0', '141.0', '79.0', '71.0', '2860.0']
+
+[Bwd Packet Length Min]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      105
+  mínimo numérico:      0.0
+  máximo numérico:      520.0
+  exemplos:             ['0.0', '141.0', '79.0', '71.0', '102.0']
+
+[Bwd Packet Length Mean]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      291
+  mínimo numérico:      0.0
+  máximo numérico:      1690.526315789474
+  exemplos:             ['0.0', '141.0', '79.0', '71.0', '730.4634146341463']
+
+[Bwd Packet Length Std]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      195
+  mínimo numérico:      0.0
+  máximo numérico:      1351.1382967593274
+  exemplos:             ['0.0', '917.1956479779424', '340.5978014004797', '19.39530298236605', '565.2572423242358']
+
+[Flow Bytes/s]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             2,391 (0.34%)
+  NaN:                  0
+  +Inf / -Inf:          19,365 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      2944000000.0
+  exemplos:             ['1502023.5790955483', '0.20955217390734912', '2469737.7746279235', '1627670.3967446592', '8.8E8']
+
+[Flow Packets/s]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          21,756 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0596110409384288
+  máximo numérico:      4000000.0
+  exemplos:             ['3413.689952489882', '0.4295819565100657', '5613.0403968816445', '3699.2509016924073', '2000000.0']
+
+[Flow IAT Mean]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      32000089.0
+  exemplos:             ['295.98958333333337', '2386040.6249999995', '179.0609137055837', '271.68341708542715', '1.0']
+
+[Flow IAT Std]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      30297638.94377745
+  exemplos:             ['500.95930068517794', '4235881.507316171', '223.34465072009968', '657.6719311070242', '0.0']
+
+[Flow IAT Max]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      78575198.0
+  exemplos:             ['3596.0', '10019970.0', '1391.0', '5437.0', '1.0']
+
+[Flow IAT Min]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      298
+  mínimo numérico:      0.0
+  máximo numérico:      32000089.0
+  exemplos:             ['1.0', '2.0', '3.0', '0.0', '4.0']
+
+[Fwd IAT Total]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      119999999.0
+  exemplos:             ['28415.0', '95441625.0', '35275.0', '54065.0', '1.0']
+
+[Fwd IAT Mean]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      32000089.0
+  exemplos:             ['295.98958333333337', '4772081.249999999', '179.0609137055837', '271.68341708542715', '1.0']
+
+[Fwd IAT Std]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      30297638.94377745
+  exemplos:             ['500.95930068517794', '5010906.87990462', '223.34465072009968', '657.6719311070242', '0.0']
+
+[Fwd IAT Max]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      78575198.0
+  exemplos:             ['3596.0', '10046430.0', '1391.0', '5437.0', '1.0']
+
+[Fwd IAT Min]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      235
+  mínimo numérico:      0.0
+  máximo numérico:      32000089.0
+  exemplos:             ['1.0', '2.0', '3.0', '0.0', '4.0']
+
+[Bwd IAT Total]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      3627
+  mínimo numérico:      0.0
+  máximo numérico:      119562158.0
+  exemplos:             ['0.0', '90308541.0', '3.0', '2.0', '1287911.0']
+
+[Bwd IAT Mean]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      3637
+  mínimo numérico:      0.0
+  máximo numérico:      38156597.33333333
+  exemplos:             ['0.0', '4753081.105263158', '3.0', '2.0', '1.0']
+
+[Bwd IAT Std]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      3575
+  mínimo numérico:      0.0
+  máximo numérico:      66089163.49322966
+  exemplos:             ['0.0', '5147477.654670488', '51099.92462219321', '651.9524522539969', '219086.2376552593']
+
+[Bwd IAT Max]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      3626
+  mínimo numérico:      0.0
+  máximo numérico:      114469790.0
+  exemplos:             ['0.0', '10046403.0', '3.0', '2.0', '1.0']
+
+[Bwd IAT Min]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      69
+  mínimo numérico:      0.0
+  máximo numérico:      199.0
+  exemplos:             ['0.0', '1.0', '3.0', '2.0', '52.0']
+
+[Fwd PSH Flags]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2
+  mínimo numérico:      0.0
+  máximo numérico:      1.0
+  exemplos:             ['0', '1']
+
+[Bwd PSH Flags]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[Fwd URG Flags]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[Bwd URG Flags]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[Fwd Header Length]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2365
+  mínimo numérico:      -212543795000.0
+  máximo numérico:      88000.0
+  exemplos:             ['-97', '420', '-210418357050', '1600', '0']
+
+[Bwd Header Length]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      137
+  mínimo numérico:      -2125437950.0
+  máximo numérico:      6364.0
+  exemplos:             ['0', '640', '64', '60', '40']
+
+[Fwd Packets/s]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      4000000.0
+  exemplos:             ['3413.689952489882', '0.22002978260271647', '5613.040396881645', '3699.2509016924073', '2000000.0']
+
+[Bwd Packets/s]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      6415
+  mínimo numérico:      0.0
+  máximo numérico:      1000000.0
+  exemplos:             ['0.0', '0.20955217390734912', '96.81010697516821', '96.96029475929608', '19801.980198019806']
+
+[Min Packet Length]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1140
+  mínimo numérico:      0.0
+  máximo numérico:      1472.0
+  exemplos:             ['440.0', '0.0', '59.0', '34.0', '1472.0']
+
+[Max Packet Length]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1224
+  mínimo numérico:      0.0
+  máximo numérico:      3560.0
+  exemplos:             ['440.0', '1.0', '141.0', '79.0', '1472.0']
+
+[Packet Length Mean]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2080
+  mínimo numérico:      0.0
+  máximo numérico:      1529.5238095238094
+  exemplos:             ['440.0', '0.5000000000000001', '91.8', '52.0', '1472.0']
+
+[Packet Length Std]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      812
+  mínimo numérico:      0.0
+  máximo numérico:      1219.2176482946115
+  exemplos:             ['0.0', '0.5060608273474739', '44.913249715423625', '24.647515087732486', '33.034407108046196']
+
+[Packet Length Variance]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      853
+  mínimo numérico:      0.0
+  máximo numérico:      1486491.6739130432
+  exemplos:             ['0.0', '0.25609756097560976', '2017.2', '607.5', '1091.2720529801325']
+
+[FIN Flag Count]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[SYN Flag Count]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2
+  mínimo numérico:      0.0
+  máximo numérico:      1.0
+  exemplos:             ['0', '1']
+
+[RST Flag Count]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2
+  mínimo numérico:      0.0
+  máximo numérico:      1.0
+  exemplos:             ['0', '1']
+
+[PSH Flag Count]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[ACK Flag Count]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2
+  mínimo numérico:      0.0
+  máximo numérico:      1.0
+  exemplos:             ['0', '1']
+
+[URG Flag Count]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2
+  mínimo numérico:      0.0
+  máximo numérico:      1.0
+  exemplos:             ['0', '1']
+
+[CWE Flag Count]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2
+  mínimo numérico:      0.0
+  máximo numérico:      1.0
+  exemplos:             ['0', '1']
+
+[ECE Flag Count]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[Down/Up Ratio]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      9
+  mínimo numérico:      0.0
+  máximo numérico:      12.0
+  exemplos:             ['0.0', '1.0', '2.0', '3.0', '5.0']
+
+[Average Packet Size]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2310
+  mínimo numérico:      0.0
+  máximo numérico:      2208.0
+  exemplos:             ['444.5360824742268', '0.5121951219512195', '442.22222222222223', '442.2', '660.0']
+
+[Avg Fwd Segment Size]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1722
+  mínimo numérico:      0.0
+  máximo numérico:      1791.0
+  exemplos:             ['440.0', '0.9523809523809524', '59.0', '34.0', '1472.0']
+
+[Avg Bwd Segment Size]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      290
+  mínimo numérico:      0.0
+  máximo numérico:      1690.526315789474
+  exemplos:             ['0.0', '141.0', '79.0', '71.0', '730.4634146341464']
+
+[Fwd Header Length.1]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2365
+  mínimo numérico:      -212543795000.0
+  máximo numérico:      88000.0
+  exemplos:             ['-97', '420', '-210418357050', '1600', '0']
+
+[Fwd Avg Bytes/Bulk]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[Fwd Avg Packets/Bulk]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[Fwd Avg Bulk Rate]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[Bwd Avg Bytes/Bulk]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[Bwd Avg Packets/Bulk]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[Bwd Avg Bulk Rate]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0']
+
+[Subflow Fwd Packets]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      185
+  mínimo numérico:      1.0
+  máximo numérico:      99802.0
+  exemplos:             ['97', '21', '198', '200', '2']
+
+[Subflow Fwd Bytes]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1861
+  mínimo numérico:      0.0
+  máximo numérico:      88000.0
+  exemplos:             ['42680', '20', '87120', '88000', '880']
+
+[Subflow Bwd Packets]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      83
+  mínimo numérico:      0.0
+  máximo numérico:      462.0
+  exemplos:             ['0', '20', '2', '3', '82']
+
+[Subflow Bwd Bytes]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      283
+  mínimo numérico:      0.0
+  máximo numérico:      441512.0
+  exemplos:             ['0', '282', '158', '142', '59898']
+
+[Init_Win_bytes_forward]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      215
+  mínimo numérico:      -1.0
+  máximo numérico:      65535.0
+  exemplos:             ['-1', '16383', '64', '268', '258']
+
+[Init_Win_bytes_backward]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      180
+  mínimo numérico:      -1.0
+  máximo numérico:      65535.0
+  exemplos:             ['-1', '250', '235', '311', '247']
+
+[act_data_pkt_fwd]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      176
+  mínimo numérico:      0.0
+  máximo numérico:      199.0
+  exemplos:             ['96', '19', '197', '199', '1']
+
+[min_seg_size_forward]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1403
+  mínimo numérico:      -1408237563.0
+  máximo numérico:      1480.0
+  exemplos:             ['-1', '20', '-1062718975', '8', '0']
+
+[Active Mean]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2282
+  mínimo numérico:      0.0
+  máximo numérico:      16786536.6
+  exemplos:             ['0.0', '26464.33333333333', '62105.0', '283135.5', '51045.09090909092']
+
+[Active Std]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      3612
+  mínimo numérico:      0.0
+  máximo numérico:      28536808.761129525
+  exemplos:             ['0.0', '26.05762844159041', '6.363961030678928', '76474.04378408995', '28536808.761129525']
+
+[Active Max]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1270
+  mínimo numérico:      0.0
+  máximo numérico:      67834732.0
+  exemplos:             ['0.0', '26499.0', '62105.0', '283140.0', '281623.0']
+
+[Active Min]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      281
+  mínimo numérico:      0.0
+  máximo numérico:      9254604.0
+  exemplos:             ['0.0', '26418.0', '62105.0', '283131.0', '27963.0']
+
+[Idle Mean]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      7786
+  mínimo numérico:      0.0
+  máximo numérico:      78575198.0
+  exemplos:             ['0.0', '10007816.888888888', '52738455.0', '55939502.0', '9982991.090909092']
+
+[Idle Std]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      6907
+  mínimo numérico:      0.0
+  máximo numérico:      33797375.0302514
+  exemplos:             ['0.0', '6874.678091453277', '2625088.6703210617', '65828.75979912514', '98.18350166902988']
+
+[Idle Max]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      7779
+  mínimo numérico:      0.0
+  máximo numérico:      78575198.0
+  exemplos:             ['0.0', '10019970.0', '52738455.0', '57795720.0', '10002938.0']
+
+[Idle Min]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      7782
+  mínimo numérico:      0.0
+  máximo numérico:      78575198.0
+  exemplos:             ['0.0', '10004286.0', '52738455.0', '54083284.0', '9784510.0']
+
+[SimillarHTTP]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   99.99%
+  valores únicos*:      31
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['0', '205.174.165.72/c.php', 'ocsp.digicert.com/', '2.gravatar.com/avatar/?s=48&d=mm&r=g', '205.174.165.72null']
+
+[Inbound]
+  tipo inferido:        numeric
+  amostras analisadas:  704,285
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2
+  mínimo numérico:      0.0
+  máximo numérico:      1.0
+  exemplos:             ['1', '0']
+
+* Cardinalidade calculada sobre a amostra de features.

@@ -1,0 +1,516 @@
+==============================================================================
+TON-IoT NETWORK DATASET - RELATÓRIO DE INSPEÇÃO
+==============================================================================
+
+Diretório:                  data/TON_IoT/raw/Processed_Network_dataset
+Arquivos:                   23
+Registros válidos:          22,339,021
+Linhas problemáticas:       0
+Features após remover uid:  44
+Amostragem de features:     1 a cada 40 registros
+
+LABEL
+------------------------------------------------------------------------------
+'1'                    21,542,641 ( 96.4350%)
+'0'                       796,380 (  3.5650%)
+
+TYPE
+------------------------------------------------------------------------------
+'scanning'              7,140,161 ( 31.9627%)
+'ddos'                  6,165,008 ( 27.5975%)
+'dos'                   3,375,328 ( 15.1096%)
+'xss'                   2,108,944 (  9.4406%)
+'password'              1,718,568 (  7.6931%)
+'normal'                  796,380 (  3.5650%)
+'backdoor'                508,116 (  2.2746%)
+'injection'               452,659 (  2.0263%)
+'ransomware'               72,805 (  0.3259%)
+'mitm'                      1,052 (  0.0047%)
+
+FEATURES - PERFIL DA AMOSTRA
+------------------------------------------------------------------------------
+
+[ts]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      1554198358.0
+  máximo numérico:      1556549155.0
+  exemplos:             ['1554198358', '1554198414', '1554198475', '1554198534', '1554198599']
+
+[src_ip]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      769
+  mínimo numérico:      0.0
+  máximo numérico:      0.0
+  exemplos:             ['3.122.49.24', '192.168.1.152', '192.168.1.79', '192.168.1.133', '192.168.1.250']
+
+[src_port]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      65535.0
+  exemplos:             ['1883', '34296', '1880', '36116', '47813']
+
+[dst_ip]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      1440
+  exemplos:             ['192.168.1.152', '192.168.1.190', '192.168.1.255', '224.0.0.251', '192.168.1.193']
+
+[dst_port]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      65533.0
+  exemplos:             ['52976', '10502', '51782', '53', '15600']
+
+[proto]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      3
+  exemplos:             ['tcp', 'udp', 'icmp']
+
+[service]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             422,862 (75.72%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      19
+  exemplos:             ['dns', 'ssl', 'http', 'dhcp', 'gssapi;smb;ntlm']
+
+[duration]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      >10000
+  mínimo numérico:      0.0
+  máximo numérico:      80549.53026
+  exemplos:             ['80549.53026', '0', '0.001653', '0.000562', '13.107604']
+
+[src_bytes]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      3605
+  mínimo numérico:      0.0
+  máximo numérico:      2824353188.0
+  exemplos:             ['1762852', '0', '350', '336', '6474']
+
+[dst_bytes]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      3482
+  mínimo numérico:      0.0
+  máximo numérico:      4291916959.0
+  exemplos:             ['41933215', '0', '298', '474', '130']
+
+[conn_state]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      13
+  exemplos:             ['OTH', 'SHR', 'S0', 'RSTOS0', 'SF']
+
+[missed_bytes]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1130
+  mínimo numérico:      0.0
+  máximo numérico:      4142182932.0
+  exemplos:             ['0', '2327', '3869', '5698', '10462']
+
+[src_pkts]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      354
+  mínimo numérico:      0.0
+  máximo numérico:      252181.0
+  exemplos:             ['252181', '0', '1', '7', '3']
+
+[src_ip_bytes]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      4221
+  mínimo numérico:      0.0
+  máximo numérico:      14911156.0
+  exemplos:             ['14911156', '0', '63', '546', '420']
+
+[dst_pkts]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      119
+  mínimo numérico:      0.0
+  máximo numérico:      23935.0
+  exemplos:             ['2', '0', '1', '13', '6']
+
+[dst_ip_bytes]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      3784
+  mínimo numérico:      0.0
+  máximo numérico:      15119135.0
+  exemplos:             ['236', '0', '354', '530', '80']
+
+[dns_query]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             521,017 (93.29%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      1847
+  exemplos:             ['_googlecast._tcp.local', '_sleep-proxy._udp.local', 'desktop-uciie91.local', '_fb._tcp.local', '_ipps._tcp.local']
+
+[dns_qclass]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      3
+  mínimo numérico:      0.0
+  máximo numérico:      32769.0
+  exemplos:             ['0', '32769', '1']
+
+[dns_qtype]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      11
+  mínimo numérico:      0.0
+  máximo numérico:      255.0
+  exemplos:             ['0', '12', '255', '1', '43']
+
+[dns_rcode]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      4
+  mínimo numérico:      0.0
+  máximo numérico:      5.0
+  exemplos:             ['0', '3', '2', '5']
+
+[dns_AA]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             520,675 (93.23%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      2
+  exemplos:             ['F', 'T']
+
+[dns_RD]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             520,675 (93.23%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      2
+  exemplos:             ['F', 'T']
+
+[dns_RA]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             520,675 (93.23%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      2
+  exemplos:             ['F', 'T']
+
+[dns_rejected]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             520,675 (93.23%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      2
+  exemplos:             ['F', 'T']
+
+[ssl_version]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             557,877 (99.89%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      4
+  exemplos:             ['TLSv12', 'TLSv13', 'SSLv3', 'TLSv10']
+
+[ssl_cipher]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             557,877 (99.89%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      5
+  exemplos:             ['TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256', 'TLS_AES_128_GCM_SHA256', 'TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA', 'TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA', 'TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384']
+
+[ssl_resumed]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             557,827 (99.88%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      2
+  exemplos:             ['F', 'T']
+
+[ssl_established]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             557,827 (99.88%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      2
+  exemplos:             ['F', 'T']
+
+[ssl_subject]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             557,918 (99.90%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      1
+  exemplos:             ['CN=Mr Shepherd;OU=Security Shepherd Project;O=OWASP;L=Dublin;ST=Ireland;C=IE']
+
+[ssl_issuer]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             557,918 (99.90%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      1
+  exemplos:             ['CN=Mr Shepherd;OU=Security Shepherd Project;O=OWASP;L=Dublin;ST=Ireland;C=IE']
+
+[http_trans_depth]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             557,840 (99.89%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      1.0
+  máximo numérico:      1.0
+  exemplos:             ['1']
+
+[http_method]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             557,840 (99.89%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      2
+  exemplos:             ['GET', 'POST']
+
+[http_uri]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             557,840 (99.89%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      50
+  exemplos:             ['/msdownload/update/v3/static/trustedr/en/pinrulesstl.cab?b3d98506e52475df', '/upnp/control/ConnectionManager1', '/icon_SML.jpg', '/en-US/livetile/preinstall?region=US&appid=C98EA5B0842DBB9405BBF071E1DA76512D21FE36&FORM=Threshold', '/icon_LRG.png']
+
+[http_referrer]
+  tipo inferido:        empty
+  amostras analisadas:  558,476
+  ausentes:             558,476 (100.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   n/a
+  valores únicos*:      0
+  exemplos:             []
+
+[http_version]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             557,853 (99.89%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      1
+  mínimo numérico:      1.1
+  máximo numérico:      1.1
+  exemplos:             ['1.1']
+
+[http_request_body_len]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      10
+  mínimo numérico:      0.0
+  máximo numérico:      300.0
+  exemplos:             ['0', '300', '128', '40', '42']
+
+[http_response_body_len]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      36
+  mínimo numérico:      0.0
+  máximo numérico:      29073.0
+  exemplos:             ['0', '7796', '29073', '1684', '4294']
+
+[http_status_code]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             0 (0.00%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      8
+  mínimo numérico:      0.0
+  máximo numérico:      404.0
+  exemplos:             ['0', '200', '206', '404', '302']
+
+[http_user_agent]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             557,840 (99.89%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      106
+  exemplos:             ['Microsoft-CryptoAPI/10.0', 'Microsoft-Windows/10.0 UPnP/1.0 Microsoft-DLNA DLNADOC/1.50', 'User-Agent: Microsoft-DLNA DLNADOC/1.50', 'Microsoft-WNS/10.0', 'Microsoft NCSI']
+
+[http_orig_mime_types]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             558,415 (99.99%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      2
+  exemplos:             ['application/soap+xml', 'text/plain']
+
+[http_resp_mime_types]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             558,293 (99.97%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      6
+  exemplos:             ['application/vnd.ms-cab-compressed', 'application/xml', 'image/jpeg', 'image/png', 'text/plain']
+
+[weird_name]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             558,396 (99.99%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      8
+  exemplos:             ['bad_TCP_checksum', 'data_before_established', 'active_connection_reuse', 'DNS_RR_unknown_type', 'bad_UDP_checksum']
+
+[weird_addl]
+  tipo inferido:        numeric
+  amostras analisadas:  558,476
+  ausentes:             558,442 (99.99%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   100.00%
+  valores únicos*:      2
+  mínimo numérico:      46.0
+  máximo numérico:      48.0
+  exemplos:             ['46', '48']
+
+[weird_notice]
+  tipo inferido:        categorical
+  amostras analisadas:  558,476
+  ausentes:             558,396 (99.99%)
+  NaN:                  0
+  +Inf / -Inf:          0 / 0
+  proporção numérica:   0.00%
+  valores únicos*:      1
+  exemplos:             ['F']
+
+* Cardinalidade calculada sobre a amostra de features.
+  Valores >10000 indicam alta cardinalidade.
