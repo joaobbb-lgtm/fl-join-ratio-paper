@@ -66,3 +66,4 @@ code/PFLlib/results/
 # Python cache
 __pycache__/
 *.pyc
+code/PFLlib/dataset/FashionMNIST/rawdata/
