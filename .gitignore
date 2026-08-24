@@ -67,3 +67,5 @@ code/PFLlib/results/
 __pycache__/
 *.pyc
 code/PFLlib/dataset/FashionMNIST/rawdata/
+telemetry/logs/
+experiments/
