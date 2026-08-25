@@ -87,6 +87,14 @@ class Client(object):
         test_num = 0
         y_prob = []
         y_true = []
+
+        # Additional binary-classification observability.
+        # This does not alter predictions, training, or the original
+        # PFLlib return values.
+        tn = 0
+        fp = 0
+        fn = 0
+        tp = 0
         
         with torch.no_grad():
             for x, y in testloaderfull:
@@ -97,8 +105,16 @@ class Client(object):
                 y = y.to(self.device)
                 output = self.model(x)
 
-                test_acc += (torch.sum(torch.argmax(output, dim=1) == y)).item()
+                pred = torch.argmax(output, dim=1)
+
+                test_acc += (torch.sum(pred == y)).item()
                 test_num += y.shape[0]
+
+                if self.num_classes == 2:
+                    tn += torch.sum((pred == 0) & (y == 0)).item()
+                    fp += torch.sum((pred == 1) & (y == 0)).item()
+                    fn += torch.sum((pred == 0) & (y == 1)).item()
+                    tp += torch.sum((pred == 1) & (y == 1)).item()
 
                 y_prob.append(output.detach().cpu().numpy())
                 nc = self.num_classes
@@ -116,6 +132,16 @@ class Client(object):
         y_true = np.concatenate(y_true, axis=0)
 
         auc = metrics.roc_auc_score(y_true, y_prob, average='micro')
+
+        if self.num_classes == 2:
+            self.last_confusion = {
+                "tn": int(tn),
+                "fp": int(fp),
+                "fn": int(fn),
+                "tp": int(tp),
+            }
+        else:
+            self.last_confusion = None
         
         return test_acc, test_num, auc
 

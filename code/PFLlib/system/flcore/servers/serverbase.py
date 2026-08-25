@@ -209,13 +209,97 @@ class Server(object):
         num_samples = []
         tot_correct = []
         tot_auc = []
+
+        global_tn = 0
+        global_fp = 0
+        global_fn = 0
+        global_tp = 0
+        confusion_available = self.num_classes == 2
+
         for c in self.clients:
             ct, ns, auc = c.test_metrics()
             tot_correct.append(ct * 1.0)
             tot_auc.append(auc * ns)
             num_samples.append(ns)
 
+            if confusion_available:
+                cm = getattr(c, "last_confusion", None)
+
+                if cm is None:
+                    confusion_available = False
+                else:
+                    global_tn += cm["tn"]
+                    global_fp += cm["fp"]
+                    global_fn += cm["fn"]
+                    global_tp += cm["tp"]
+
         ids = [c.id for c in self.clients]
+
+        if confusion_available:
+            total = global_tn + global_fp + global_fn + global_tp
+
+            global_accuracy = (
+                (global_tp + global_tn) / total
+                if total > 0 else float("nan")
+            )
+
+            attack_recall = (
+                global_tp / (global_tp + global_fn)
+                if (global_tp + global_fn) > 0 else float("nan")
+            )
+
+            attack_fnr = (
+                global_fn / (global_tp + global_fn)
+                if (global_tp + global_fn) > 0 else float("nan")
+            )
+
+            normal_recall = (
+                global_tn / (global_tn + global_fp)
+                if (global_tn + global_fp) > 0 else float("nan")
+            )
+
+            balanced_accuracy = (
+                (attack_recall + normal_recall) / 2
+            )
+
+            f1_attack = (
+                (2 * global_tp)
+                / (2 * global_tp + global_fp + global_fn)
+                if (2 * global_tp + global_fp + global_fn) > 0
+                else float("nan")
+            )
+
+            f1_normal = (
+                (2 * global_tn)
+                / (2 * global_tn + global_fp + global_fn)
+                if (2 * global_tn + global_fp + global_fn) > 0
+                else float("nan")
+            )
+
+            f1_macro = (f1_attack + f1_normal) / 2
+
+            self.last_global_confusion = {
+                "tn": global_tn,
+                "fp": global_fp,
+                "fn": global_fn,
+                "tp": global_tp,
+            }
+
+            print(
+                f"Global Confusion Matrix: "
+                f"TN={global_tn}, FP={global_fp}, "
+                f"FN={global_fn}, TP={global_tp}"
+            )
+            print(f"Global Accuracy (CM): {global_accuracy:.4f}")
+            print(f"Attack Recall (TPR): {attack_recall:.4f}")
+            print(f"Attack FNR: {attack_fnr:.4f}")
+            print(f"Normal Recall (TNR): {normal_recall:.4f}")
+            print(f"Balanced Accuracy: {balanced_accuracy:.4f}")
+            print(f"F1 Attack: {f1_attack:.4f}")
+            print(f"F1 Normal: {f1_normal:.4f}")
+            print(f"F1 Macro: {f1_macro:.4f}")
+        else:
+            self.last_global_confusion = None
 
         return ids, num_samples, tot_correct, tot_auc
 
