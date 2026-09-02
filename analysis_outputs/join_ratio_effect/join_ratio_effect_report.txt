@@ -1,0 +1,20 @@
+JOIN-RATIO EFFECT ANALYSIS
+Primary runs: 75 (five per algorithm/join-ratio configuration)
+Design used for inference: independent groups
+Global test: Kruskal-Wallis within each algorithm
+Post hoc: exact two-sided Mann-Whitney U with Holm correction
+Effect sizes: Kruskal epsilon-squared and pairwise Cliff's delta
+
+GLOBAL RESULTS
+best_accuracy | FedAvg | H=15.441631 | p=0.00386767 | epsilon2=0.572082
+best_accuracy | FedProx | H=17.664000 | p=0.00143533 | epsilon2=0.683200
+best_accuracy | SCAFFOLD | H=20.761201 | p=0.00035312 | epsilon2=0.838060
+execution_time_s | FedAvg | H=19.620923 | p=0.00059322 | epsilon2=0.781046
+execution_time_s | FedProx | H=22.205538 | p=0.00018240 | epsilon2=0.910277
+execution_time_s | SCAFFOLD | H=22.072615 | p=0.00019386 | epsilon2=0.903631
+estimated_energy_kj | FedAvg | H=18.926769 | p=0.00081241 | epsilon2=0.746338
+estimated_energy_kj | FedProx | H=20.876308 | p=0.00033506 | epsilon2=0.843815
+estimated_energy_kj | SCAFFOLD | H=22.072615 | p=0.00019386 | epsilon2=0.903631
+
+HOLM-SIGNIFICANT PAIRWISE COMPARISONS
+None
