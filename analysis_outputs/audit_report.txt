@@ -1,0 +1,10 @@
+parsed_runs_total: 76
+planned_runs: 75
+additional_runs: 1
+planned_round_records: 3825
+parsing_errors: 0
+all_exit_codes_zero: True
+learning_rates: [0.005]
+max_best_accuracy_diff_vs_article: 0.0
+max_total_time_diff_s_vs_article: 0.0
+unmatched_rows_vs_article: 1
