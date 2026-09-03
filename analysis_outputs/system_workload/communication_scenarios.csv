@@ -1,0 +1,31 @@
+algorithm,join_ratio,scenario,downlink_vectors_per_cycle,uplink_vectors_per_cycle,total_vectors_51_cycles,logical_payload_bytes_51_cycles,logical_payload_gb_51_cycles,interpretation
+FedAvg,0.1,pflib_logical_copy_pattern,100,10,5610,13060663440,13.06066344,"all-client downlink pattern observed in code; logical payload, not network traffic"
+FedAvg,0.1,selected_only_distributed_scenario,10,10,1020,2374666080,2.37466608,hypothetical implementation communicating only with selected clients
+FedAvg,0.25,pflib_logical_copy_pattern,100,25,6375,14841663000,14.841663,"all-client downlink pattern observed in code; logical payload, not network traffic"
+FedAvg,0.25,selected_only_distributed_scenario,25,25,2550,5936665200,5.9366652,hypothetical implementation communicating only with selected clients
+FedAvg,0.5,pflib_logical_copy_pattern,100,50,7650,17809995600,17.8099956,"all-client downlink pattern observed in code; logical payload, not network traffic"
+FedAvg,0.5,selected_only_distributed_scenario,50,50,5100,11873330400,11.8733304,hypothetical implementation communicating only with selected clients
+FedAvg,0.75,pflib_logical_copy_pattern,100,75,8925,20778328200,20.7783282,"all-client downlink pattern observed in code; logical payload, not network traffic"
+FedAvg,0.75,selected_only_distributed_scenario,75,75,7650,17809995600,17.8099956,hypothetical implementation communicating only with selected clients
+FedAvg,1.0,pflib_logical_copy_pattern,100,100,10200,23746660800,23.7466608,"all-client downlink pattern observed in code; logical payload, not network traffic"
+FedAvg,1.0,selected_only_distributed_scenario,100,100,10200,23746660800,23.7466608,hypothetical implementation communicating only with selected clients
+FedProx,0.1,pflib_logical_copy_pattern,100,10,5610,13060663440,13.06066344,"all-client downlink pattern observed in code; logical payload, not network traffic"
+FedProx,0.1,selected_only_distributed_scenario,10,10,1020,2374666080,2.37466608,hypothetical implementation communicating only with selected clients
+FedProx,0.25,pflib_logical_copy_pattern,100,25,6375,14841663000,14.841663,"all-client downlink pattern observed in code; logical payload, not network traffic"
+FedProx,0.25,selected_only_distributed_scenario,25,25,2550,5936665200,5.9366652,hypothetical implementation communicating only with selected clients
+FedProx,0.5,pflib_logical_copy_pattern,100,50,7650,17809995600,17.8099956,"all-client downlink pattern observed in code; logical payload, not network traffic"
+FedProx,0.5,selected_only_distributed_scenario,50,50,5100,11873330400,11.8733304,hypothetical implementation communicating only with selected clients
+FedProx,0.75,pflib_logical_copy_pattern,100,75,8925,20778328200,20.7783282,"all-client downlink pattern observed in code; logical payload, not network traffic"
+FedProx,0.75,selected_only_distributed_scenario,75,75,7650,17809995600,17.8099956,hypothetical implementation communicating only with selected clients
+FedProx,1.0,pflib_logical_copy_pattern,100,100,10200,23746660800,23.7466608,"all-client downlink pattern observed in code; logical payload, not network traffic"
+FedProx,1.0,selected_only_distributed_scenario,100,100,10200,23746660800,23.7466608,hypothetical implementation communicating only with selected clients
+SCAFFOLD,0.1,pflib_logical_copy_pattern,200,20,11220,26121326880,26.12132688,"all-client downlink pattern observed in code; logical payload, not network traffic"
+SCAFFOLD,0.1,selected_only_distributed_scenario,20,20,2040,4749332160,4.74933216,hypothetical implementation communicating only with selected clients
+SCAFFOLD,0.25,pflib_logical_copy_pattern,200,50,12750,29683326000,29.683326,"all-client downlink pattern observed in code; logical payload, not network traffic"
+SCAFFOLD,0.25,selected_only_distributed_scenario,50,50,5100,11873330400,11.8733304,hypothetical implementation communicating only with selected clients
+SCAFFOLD,0.5,pflib_logical_copy_pattern,200,100,15300,35619991200,35.6199912,"all-client downlink pattern observed in code; logical payload, not network traffic"
+SCAFFOLD,0.5,selected_only_distributed_scenario,100,100,10200,23746660800,23.7466608,hypothetical implementation communicating only with selected clients
+SCAFFOLD,0.75,pflib_logical_copy_pattern,200,150,17850,41556656400,41.5566564,"all-client downlink pattern observed in code; logical payload, not network traffic"
+SCAFFOLD,0.75,selected_only_distributed_scenario,150,150,15300,35619991200,35.6199912,hypothetical implementation communicating only with selected clients
+SCAFFOLD,1.0,pflib_logical_copy_pattern,200,200,20400,47493321600,47.4933216,"all-client downlink pattern observed in code; logical payload, not network traffic"
+SCAFFOLD,1.0,selected_only_distributed_scenario,200,200,20400,47493321600,47.4933216,hypothetical implementation communicating only with selected clients

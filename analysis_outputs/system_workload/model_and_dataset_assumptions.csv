@@ -1,0 +1,14 @@
+quantity,value,unit,basis
+clients_total,100,clients,experiment configuration
+nominal_global_rounds,50,rounds,experiment configuration
+actual_training_cycles,51,cycles,inspected PFLlib loop
+global_evaluations,51,evaluations,rounds 0..50 in logs
+local_epochs,5,epochs,experiment configuration
+train_samples_per_client,525,samples,fixed partition
+test_samples_per_client,175,samples,fixed partition
+batch_size,10,samples,experiment configuration
+train_batches_per_epoch,52,batches,drop_last=True
+test_batches_per_evaluation,18,batches,drop_last=False
+model_trainable_parameters,582026,parameters,FedAvgCNN architecture
+parameter_precision,32,bits,FP32 assumption
+model_vector_size,2328104,bytes,parameters x 4

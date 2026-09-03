@@ -1,0 +1,43 @@
+SYSTEM WORKLOAD CHARACTERIZATION
+Method: analytical counts derived from the validated experiment and inspected PFLlib code
+No new federated-learning execution was performed
+
+IMPLEMENTATION FACTS
+Model trainable parameters: 582026
+One FP32 model vector: 2.328104 MB (decimal)
+Nominal rounds: 50
+Actual training cycles in the inspected range(global_rounds + 1) loop: 51
+Logged all-client evaluations: 51
+Fixed evaluation sample presentations per execution: 3544500
+
+WORKLOAD BY JOIN RATIO (same counts for all algorithms)
+q=0.10 | selected/cycle=10 | participations_50=500 | participations_51=510 | training_batches=132600 | training_sample_presentations=1326000
+q=0.25 | selected/cycle=25 | participations_50=1250 | participations_51=1275 | training_batches=331500 | training_sample_presentations=3315000
+q=0.50 | selected/cycle=50 | participations_50=2500 | participations_51=2550 | training_batches=663000 | training_sample_presentations=6630000
+q=0.75 | selected/cycle=75 | participations_50=3750 | participations_51=3825 | training_batches=994500 | training_sample_presentations=9945000
+q=1.00 | selected/cycle=100 | participations_50=5000 | participations_51=5100 | training_batches=1326000 | training_sample_presentations=13260000
+
+SELECTED-ONLY LOGICAL COMMUNICATION (51 cycles, FP32)
+FedAvg | q=0.10 | payload_gb=2.374666
+FedAvg | q=0.25 | payload_gb=5.936665
+FedAvg | q=0.50 | payload_gb=11.873330
+FedAvg | q=0.75 | payload_gb=17.809996
+FedAvg | q=1.00 | payload_gb=23.746661
+FedProx | q=0.10 | payload_gb=2.374666
+FedProx | q=0.25 | payload_gb=5.936665
+FedProx | q=0.50 | payload_gb=11.873330
+FedProx | q=0.75 | payload_gb=17.809996
+FedProx | q=1.00 | payload_gb=23.746661
+SCAFFOLD | q=0.10 | payload_gb=4.749332
+SCAFFOLD | q=0.25 | payload_gb=11.873330
+SCAFFOLD | q=0.50 | payload_gb=23.746661
+SCAFFOLD | q=0.75 | payload_gb=35.619991
+SCAFFOLD | q=1.00 | payload_gb=47.493322
+
+CAUTION
+Communication values are logical model-payload estimates, not measured network traffic.
+The PFLlib experiment is an in-process simulation that copies model parameters in memory.
+Its server sends parameters to all 100 client objects each cycle; the selected-only scenario is hypothetical.
+SCAFFOLD is represented by two parameter-sized vectors in each direction (model/control updates).
+Time and energy per participation are amortized observed ratios; they do not isolate causal client cost
+because every execution also contains fixed all-client evaluation and other server overheads.
