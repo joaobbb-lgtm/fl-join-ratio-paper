@@ -81,9 +81,14 @@ def load_runs(path: Path) -> pd.DataFrame:
         columns={v: k for k, v in columns.items()}
     )
     runs["algorithm"] = runs["algorithm"].astype(str).str.strip()
+
     for col in ["join_ratio", "execution_time_s", "estimated_energy_kj"]:
         runs[col] = pd.to_numeric(runs[col], errors="raise")
+
+    source_energy_column = str(columns["estimated_energy_kj"]).strip().lower()
+    if source_energy_column.endswith("_j"):
         runs["estimated_energy_kj"] = runs["estimated_energy_kj"] / 1000.0
+
     return runs
 
 
