@@ -7,21 +7,21 @@ No execution is automatically excluded
 COEFFICIENT OF VARIATION BY CONFIGURATION
 
 best_accuracy
-FedAvg | q=0.10 | mean=0.694560000 | median=0.696800000 | sd=0.007287181 | iqr=0.007900000 | cv_percent=1.049179
-FedAvg | q=0.25 | mean=0.708920000 | median=0.711800000 | sd=0.006520506 | iqr=0.007200000 | cv_percent=0.919780
-FedAvg | q=0.50 | mean=0.714500000 | median=0.714600000 | sd=0.000620484 | iqr=0.000200000 | cv_percent=0.086842
-FedAvg | q=0.75 | mean=0.715540000 | median=0.715400000 | sd=0.001950128 | iqr=0.002400000 | cv_percent=0.272539
-FedAvg | q=1.00 | mean=0.715200000 | median=0.715000000 | sd=0.000616441 | iqr=0.000600000 | cv_percent=0.086191
-FedProx | q=0.10 | mean=0.698680000 | median=0.696300000 | sd=0.006813736 | iqr=0.007500000 | cv_percent=0.975230
-FedProx | q=0.25 | mean=0.706420000 | median=0.705400000 | sd=0.003790383 | iqr=0.001500000 | cv_percent=0.536562
-FedProx | q=0.50 | mean=0.712360000 | median=0.711900000 | sd=0.002660451 | iqr=0.002500000 | cv_percent=0.373470
-FedProx | q=0.75 | mean=0.715000000 | median=0.715900000 | sd=0.002651415 | iqr=0.004400000 | cv_percent=0.370827
-FedProx | q=1.00 | mean=0.715680000 | median=0.715500000 | sd=0.000892749 | iqr=0.001100000 | cv_percent=0.124741
-SCAFFOLD | q=0.10 | mean=0.733960000 | median=0.733700000 | sd=0.006342555 | iqr=0.009000000 | cv_percent=0.864155
-SCAFFOLD | q=0.25 | mean=0.739240000 | median=0.737800000 | sd=0.004891114 | iqr=0.005700000 | cv_percent=0.661641
-SCAFFOLD | q=0.50 | mean=0.744020000 | median=0.745100000 | sd=0.004005871 | iqr=0.003300000 | cv_percent=0.538409
-SCAFFOLD | q=0.75 | mean=0.752600000 | median=0.753300000 | sd=0.001705872 | iqr=0.002200000 | cv_percent=0.226664
-SCAFFOLD | q=1.00 | mean=0.759480000 | median=0.759900000 | sd=0.001169188 | iqr=0.001900000 | cv_percent=0.153946
+FedAvg | q=0.10 | mean=0.694560000 | median=0.696800000 | sd=0.007288280 | iqr=0.007942857 | cv_percent=1.049338
+FedAvg | q=0.25 | mean=0.708914286 | median=0.711828571 | sd=0.006543793 | iqr=0.007257143 | cv_percent=0.923073
+FedAvg | q=0.50 | mean=0.714480000 | median=0.714571429 | sd=0.000624140 | iqr=0.000228571 | cv_percent=0.087356
+FedAvg | q=0.75 | mean=0.715565714 | median=0.715428571 | sd=0.001956089 | iqr=0.002400000 | cv_percent=0.273363
+FedAvg | q=1.00 | mean=0.715200000 | median=0.715028571 | sd=0.000591090 | iqr=0.000571429 | cv_percent=0.082647
+FedProx | q=0.10 | mean=0.698708571 | median=0.696342857 | sd=0.006817217 | iqr=0.007485714 | cv_percent=0.975688
+FedProx | q=0.25 | mean=0.706400000 | median=0.705428571 | sd=0.003777700 | iqr=0.001485714 | cv_percent=0.534782
+FedProx | q=0.50 | mean=0.712354286 | median=0.711885714 | sd=0.002697966 | iqr=0.002571429 | cv_percent=0.378739
+FedProx | q=0.75 | mean=0.714982857 | median=0.715885714 | sd=0.002632730 | iqr=0.004400000 | cv_percent=0.368223
+FedProx | q=1.00 | mean=0.715680000 | median=0.715485714 | sd=0.000894062 | iqr=0.001028571 | cv_percent=0.124925
+SCAFFOLD | q=0.10 | mean=0.733965714 | median=0.733657143 | sd=0.006343578 | iqr=0.009028571 | cv_percent=0.864288
+SCAFFOLD | q=0.25 | mean=0.739211429 | median=0.737771429 | sd=0.004905873 | iqr=0.005714286 | cv_percent=0.663663
+SCAFFOLD | q=0.50 | mean=0.744011429 | median=0.745085714 | sd=0.003982697 | iqr=0.003314286 | cv_percent=0.535301
+SCAFFOLD | q=0.75 | mean=0.752571429 | median=0.753257143 | sd=0.001704256 | iqr=0.002171429 | cv_percent=0.226458
+SCAFFOLD | q=1.00 | mean=0.759485714 | median=0.759885714 | sd=0.001168288 | iqr=0.001942857 | cv_percent=0.153826
 
 execution_time_s
 FedAvg | q=0.10 | mean=1485.390000000 | median=1546.820000000 | sd=240.788359457 | iqr=438.960000000 | cv_percent=16.210447
@@ -58,9 +58,9 @@ SCAFFOLD | q=0.75 | mean=115.221234788 | median=92.415527375 | sd=48.006807178 |
 SCAFFOLD | q=1.00 | mean=132.569834163 | median=108.474223188 | sd=37.693371872 | iqr=65.036995063 | cv_percent=28.432842
 
 POTENTIAL OUTLIERS
-best_accuracy | FedAvg | q=0.50 | rep=rep2 | value=0.713500000 | below_lower_fence
+best_accuracy | FedAvg | q=0.50 | rep=rep2 | value=0.713485714 | below_lower_fence
 best_accuracy | FedAvg | q=0.50 | rep=rep5 | value=0.715200000 | above_upper_fence
-best_accuracy | FedProx | q=0.25 | rep=rep1 | value=0.712900000 | above_upper_fence
+best_accuracy | FedProx | q=0.25 | rep=rep1 | value=0.712857143 | above_upper_fence
 estimated_energy_kj | FedAvg | q=0.75 | rep=rep1 | value=94.158642562 | above_upper_fence
 estimated_energy_kj | FedAvg | q=0.75 | rep=rep3 | value=78.085380563 | below_lower_fence
 estimated_energy_kj | FedProx | q=0.25 | rep=rep5 | value=92.327694250 | above_upper_fence

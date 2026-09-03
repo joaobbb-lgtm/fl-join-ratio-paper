@@ -47,7 +47,7 @@ def load_runs(path: Path) -> pd.DataFrame:
     repetition = first_column(raw, ["rep", "repetition", "seed"])
     accuracy = first_column(
         raw,
-        ["best_accuracy_from_rounds", "best_accuracy_reported", "best_accuracy"],
+        ["best_accuracy_reported", "best_accuracy_from_rounds", "best_accuracy"],
     )
     time = first_column(
         raw,
