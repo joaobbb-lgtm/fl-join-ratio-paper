@@ -1,0 +1,39 @@
+PARETO AND QUALITY-COST TRADE-OFF ANALYSIS
+Quality objective: maximize mean best accuracy
+Cost objectives: minimize median execution time and median estimated energy
+Balanced rule: minimum normalized Euclidean distance to the ideal point with equal weights
+
+ACCURACY-TIME GLOBAL FRONTIER
+SCAFFOLD_q0.10
+SCAFFOLD_q0.25
+SCAFFOLD_q0.50
+SCAFFOLD_q0.75
+SCAFFOLD_q1.00
+
+ACCURACY-ENERGY GLOBAL FRONTIER
+FedAvg_q0.10
+SCAFFOLD_q0.10
+SCAFFOLD_q0.25
+SCAFFOLD_q0.50
+SCAFFOLD_q0.75
+SCAFFOLD_q1.00
+
+THREE-OBJECTIVE GLOBAL FRONTIER
+FedAvg_q0.10
+SCAFFOLD_q0.10
+SCAFFOLD_q0.25
+SCAFFOLD_q0.50
+SCAFFOLD_q0.75
+SCAFFOLD_q1.00
+
+RECOMMENDATIONS
+maximum_quality | SCAFFOLD_q1.00 | accuracy=0.759486 | time_s=7318.800 | energy_kj=108.474223
+minimum_time | SCAFFOLD_q0.10 | accuracy=0.733966 | time_s=1375.560 | energy_kj=19.429070
+maximum_energy_efficiency | FedAvg_q0.10 | accuracy=0.694560 | time_s=1546.820 | energy_kj=18.177070
+balanced_accuracy_time | SCAFFOLD_q0.25 | accuracy=0.739211 | time_s=2384.230 | energy_kj=35.525456
+balanced_accuracy_energy | SCAFFOLD_q0.25 | accuracy=0.739211 | time_s=2384.230 | energy_kj=35.525456
+balanced_accuracy_time_energy | SCAFFOLD_q0.25 | accuracy=0.739211 | time_s=2384.230 | energy_kj=35.525456
+
+dominance_relations_total: 93
+CAUTION
+Balanced recommendations depend on the explicitly stated equal-weight normalization and are not universal optima.
