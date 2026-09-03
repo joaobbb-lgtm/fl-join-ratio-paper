@@ -1,0 +1,6 @@
+join_ratio,selected_clients_per_cycle,nominal_client_participations_50_rounds,actual_client_participations_51_cycles,actual_local_training_sample_presentations,evaluation_sample_presentations_all_clients,fedavg_payload_gb,fedprox_payload_gb,scaffold_payload_gb
+0.1,10,500,510,1326000,3544500,2.37466608,2.37466608,4.74933216
+0.25,25,1250,1275,3315000,3544500,5.9366652,5.9366652,11.8733304
+0.5,50,2500,2550,6630000,3544500,11.8733304,11.8733304,23.7466608
+0.75,75,3750,3825,9945000,3544500,17.8099956,17.8099956,35.6199912
+1.0,100,5000,5100,13260000,3544500,23.7466608,23.7466608,47.4933216

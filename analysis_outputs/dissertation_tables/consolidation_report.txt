@@ -1,0 +1,14 @@
+DISSERTATION TABLE CONSOLIDATION
+Configurations consolidated: 15
+Tables generated: 7
+Each table is available as an audit CSV and a LaTeX tabular fragment.
+No experiment or inferential test is executed by this consolidation step.
+
+USAGE NOTES
+Accuracy overview uses the precision-preserving article metric.
+Convergence metrics use round-wise logged accuracy and therefore its logged precision.
+Time and energy are summarized by medians; accuracy is summarized by mean and SD.
+AULC is normalized over rounds 0..50.
+The absolute convergence threshold is 0.65.
+Communication is a logical FP32 model-payload estimate, not measured network traffic.
+Knee points and Tukey outliers are exploratory diagnostics, not exclusion rules.

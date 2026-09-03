@@ -1,0 +1,8 @@
+table,purpose,csv_file,latex_file
+table_configuration_overview,Síntese principal das 15 configurações,table_configuration_overview.csv,table_configuration_overview.tex
+table_join_ratio_global_effect,Efeito global do join ratio por algoritmo,table_join_ratio_global_effect.csv,table_join_ratio_global_effect.tex
+table_marginal_returns,Ganhos e custos marginais consecutivos,table_marginal_returns.csv,table_marginal_returns.tex
+table_recommendations,Configurações recomendadas por critério,table_recommendations.csv,table_recommendations.tex
+table_exploratory_knees,Joelhos exploratórios das curvas,table_exploratory_knees.csv,table_exploratory_knees.tex
+table_system_workload,Carga computacional e payload lógico,table_system_workload.csv,table_system_workload.tex
+table_outlier_flag_summary,Resumo de flags diagnósticos de outliers,table_outlier_flag_summary.csv,table_outlier_flag_summary.tex

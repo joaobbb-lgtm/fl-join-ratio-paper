@@ -1,0 +1,7 @@
+category,configuration,algorithm,join_ratio,accuracy_mean,time_median_s,energy_median_kj,energy_efficiency_acc_per_kj,criterion,criterion_value,equal_weights_when_balanced
+maximum_quality,SCAFFOLD_q1.00,SCAFFOLD,1.0,0.7594857142857143,7318.8,108.4742231875,0.0070015317184887,accuracy_mean,0.7594857142857143,False
+minimum_time,SCAFFOLD_q0.10,SCAFFOLD,0.1,0.7339657142857143,1375.56,19.4290704375,0.0377766767919626,time_median_s,1375.56,False
+maximum_energy_efficiency,FedAvg_q0.10,FedAvg,0.1,0.69456,1546.82,18.1770699375,0.038210778876253,energy_efficiency_acc_per_kj,0.038210778876253,False
+balanced_accuracy_time,SCAFFOLD_q0.25,SCAFFOLD,0.25,0.7392114285714285,2384.23,35.525456125,0.020807936313905,ideal_distance_accuracy_time,0.2441747381075225,True
+balanced_accuracy_energy,SCAFFOLD_q0.25,SCAFFOLD,0.25,0.7392114285714285,2384.23,35.525456125,0.020807936313905,ideal_distance_accuracy_energy,0.2468555977895021,True
+balanced_accuracy_time_energy,SCAFFOLD_q0.25,SCAFFOLD,0.25,0.7392114285714285,2384.23,35.525456125,0.020807936313905,ideal_distance_accuracy_time_energy,0.2187891452185579,True

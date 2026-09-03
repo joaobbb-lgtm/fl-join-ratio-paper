@@ -1,0 +1,8 @@
+metric,algorithm,flag_count
+best_accuracy,FedAvg,2
+best_accuracy,FedProx,1
+estimated_energy_kj,FedAvg,2
+estimated_energy_kj,FedProx,2
+estimated_energy_kj,SCAFFOLD,2
+execution_time_s,FedProx,3
+execution_time_s,SCAFFOLD,5
