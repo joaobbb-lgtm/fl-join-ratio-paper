@@ -1,0 +1,29 @@
+MARGINAL RETURNS ANALYSIS
+Aggregation: mean best accuracy; median execution time; median estimated energy
+Transitions: consecutive observed join ratios
+Knee method: exploratory maximum normalized distance to the endpoint chord
+
+MARGINAL RESULTS
+FedAvg | 0.10->0.25 | delta_acc_pp=+1.435429 | delta_time_s=+1293.360 | delta_energy_kj=+24.474058 | pp_per_1000s=+1.109845 | pp_per_kj=+0.058651
+FedAvg | 0.25->0.50 | delta_acc_pp=+0.556571 | delta_time_s=+2297.440 | delta_energy_kj=+39.063400 | pp_per_1000s=+0.242257 | pp_per_kj=+0.014248
+FedAvg | 0.50->0.75 | delta_acc_pp=+0.108571 | delta_time_s=+236.170 | delta_energy_kj=+1.984273 | pp_per_1000s=+0.459717 | pp_per_kj=+0.054716
+FedAvg | 0.75->1.00 | delta_acc_pp=-0.036571 | delta_time_s=+1388.720 | delta_energy_kj=+22.903254 | pp_per_1000s=-0.026335 | pp_per_kj=-0.001597
+FedProx | 0.10->0.25 | delta_acc_pp=+0.769143 | delta_time_s=+1193.790 | delta_energy_kj=+19.464345 | pp_per_1000s=+0.644287 | pp_per_kj=+0.039515
+FedProx | 0.25->0.50 | delta_acc_pp=+0.595429 | delta_time_s=+2436.020 | delta_energy_kj=+35.380391 | pp_per_1000s=+0.244427 | pp_per_kj=+0.016829
+FedProx | 0.50->0.75 | delta_acc_pp=+0.262857 | delta_time_s=+796.500 | delta_energy_kj=+13.950442 | pp_per_1000s=+0.330015 | pp_per_kj=+0.018842
+FedProx | 0.75->1.00 | delta_acc_pp=+0.069714 | delta_time_s=+2025.930 | delta_energy_kj=+34.191094 | pp_per_1000s=+0.034411 | pp_per_kj=+0.002039
+SCAFFOLD | 0.10->0.25 | delta_acc_pp=+0.524571 | delta_time_s=+1008.670 | delta_energy_kj=+16.096386 | pp_per_1000s=+0.520062 | pp_per_kj=+0.032589
+SCAFFOLD | 0.25->0.50 | delta_acc_pp=+0.480000 | delta_time_s=+1563.920 | delta_energy_kj=+24.226381 | pp_per_1000s=+0.306921 | pp_per_kj=+0.019813
+SCAFFOLD | 0.50->0.75 | delta_acc_pp=+0.856000 | delta_time_s=+1910.420 | delta_energy_kj=+32.663691 | pp_per_1000s=+0.448069 | pp_per_kj=+0.026206
+SCAFFOLD | 0.75->1.00 | delta_acc_pp=+0.691429 | delta_time_s=+1460.230 | delta_energy_kj=+16.058696 | pp_per_1000s=+0.473507 | pp_per_kj=+0.043056
+
+EXPLORATORY KNEE CANDIDATES
+FedAvg | time | q=0.25 | distance=0.313629
+FedAvg | energy | q=0.25 | distance=0.293442
+FedProx | time | q=0.75 | distance=0.192977
+FedProx | energy | q=0.75 | distance=0.205711
+SCAFFOLD | time | q=0.50 | distance=0.027732
+SCAFFOLD | energy | q=0.75 | distance=0.064059
+
+CAUTION
+Knee candidates are descriptive points within a five-level experimental grid, not estimated universal optima.
