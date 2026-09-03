@@ -1,0 +1,28 @@
+ROUND-WISE CONVERGENCE ANALYSIS
+Round 0: initial untrained-model evaluation
+Rounds 1..50: performance after 1..50 completed global updates
+Primary executions: 75
+Common absolute threshold reached by all runs: 0.65
+AULC: trapezoidal area under accuracy vs. global-update curve, divided by 50
+Relative thresholds: fractions of each run's own maximum logged accuracy
+
+CONFIGURATION SUMMARY
+FedAvg | q=0.10 | AULC_mean=0.522498 | best_round_median=45.0 | first_r95_median=32.0 | first_abs_median=26.0 | final_acc_mean=0.647060
+FedAvg | q=0.25 | AULC_mean=0.589032 | best_round_median=45.0 | first_r95_median=22.0 | first_abs_median=18.0 | final_acc_mean=0.655200
+FedAvg | q=0.50 | AULC_mean=0.630441 | best_round_median=46.0 | first_r95_median=22.0 | first_abs_median=18.0 | final_acc_mean=0.705060
+FedAvg | q=0.75 | AULC_mean=0.647825 | best_round_median=46.0 | first_r95_median=20.0 | first_abs_median=12.0 | final_acc_mean=0.709480
+FedAvg | q=1.00 | AULC_mean=0.658324 | best_round_median=50.0 | first_r95_median=19.0 | first_abs_median=12.0 | final_acc_mean=0.715120
+FedProx | q=0.10 | AULC_mean=0.522655 | best_round_median=43.0 | first_r95_median=30.0 | first_abs_median=28.0 | final_acc_mean=0.614400
+FedProx | q=0.25 | AULC_mean=0.586295 | best_round_median=47.0 | first_r95_median=24.0 | first_abs_median=17.0 | final_acc_mean=0.677220
+FedProx | q=0.50 | AULC_mean=0.629563 | best_round_median=46.0 | first_r95_median=20.0 | first_abs_median=16.0 | final_acc_mean=0.690140
+FedProx | q=0.75 | AULC_mean=0.648107 | best_round_median=49.0 | first_r95_median=20.0 | first_abs_median=12.0 | final_acc_mean=0.709480
+FedProx | q=1.00 | AULC_mean=0.658407 | best_round_median=50.0 | first_r95_median=19.0 | first_abs_median=12.0 | final_acc_mean=0.715340
+SCAFFOLD | q=0.10 | AULC_mean=0.590104 | best_round_median=43.0 | first_r95_median=31.0 | first_abs_median=17.0 | final_acc_mean=0.704260
+SCAFFOLD | q=0.25 | AULC_mean=0.655459 | best_round_median=44.0 | first_r95_median=22.0 | first_abs_median=11.0 | final_acc_mean=0.729840
+SCAFFOLD | q=0.50 | AULC_mean=0.680077 | best_round_median=48.0 | first_r95_median=15.0 | first_abs_median=8.0 | final_acc_mean=0.728460
+SCAFFOLD | q=0.75 | AULC_mean=0.693193 | best_round_median=44.0 | first_r95_median=16.0 | first_abs_median=7.0 | final_acc_mean=0.736900
+SCAFFOLD | q=1.00 | AULC_mean=0.702444 | best_round_median=43.0 | first_r95_median=19.0 | first_abs_median=6.0 | final_acc_mean=0.752280
+
+CAUTION
+First-hit rounds can precede later accuracy oscillations; sustained-round metrics are provided separately.
+No exact time-to-threshold or energy-to-threshold is claimed by this script because evaluation occurs before training inside each PFLlib loop iteration.
