@@ -1,0 +1,82 @@
+REPETITION STABILITY ANALYSIS
+Primary executions: 75 (five repetitions per configuration)
+Metrics: best accuracy, execution time, and estimated energy
+Potential outliers: Tukey rule (values outside Q1 - 1.5*IQR or Q3 + 1.5*IQR)
+No execution is automatically excluded
+
+COEFFICIENT OF VARIATION BY CONFIGURATION
+
+best_accuracy
+FedAvg | q=0.10 | mean=0.694560000 | median=0.696800000 | sd=0.007287181 | iqr=0.007900000 | cv_percent=1.049179
+FedAvg | q=0.25 | mean=0.708920000 | median=0.711800000 | sd=0.006520506 | iqr=0.007200000 | cv_percent=0.919780
+FedAvg | q=0.50 | mean=0.714500000 | median=0.714600000 | sd=0.000620484 | iqr=0.000200000 | cv_percent=0.086842
+FedAvg | q=0.75 | mean=0.715540000 | median=0.715400000 | sd=0.001950128 | iqr=0.002400000 | cv_percent=0.272539
+FedAvg | q=1.00 | mean=0.715200000 | median=0.715000000 | sd=0.000616441 | iqr=0.000600000 | cv_percent=0.086191
+FedProx | q=0.10 | mean=0.698680000 | median=0.696300000 | sd=0.006813736 | iqr=0.007500000 | cv_percent=0.975230
+FedProx | q=0.25 | mean=0.706420000 | median=0.705400000 | sd=0.003790383 | iqr=0.001500000 | cv_percent=0.536562
+FedProx | q=0.50 | mean=0.712360000 | median=0.711900000 | sd=0.002660451 | iqr=0.002500000 | cv_percent=0.373470
+FedProx | q=0.75 | mean=0.715000000 | median=0.715900000 | sd=0.002651415 | iqr=0.004400000 | cv_percent=0.370827
+FedProx | q=1.00 | mean=0.715680000 | median=0.715500000 | sd=0.000892749 | iqr=0.001100000 | cv_percent=0.124741
+SCAFFOLD | q=0.10 | mean=0.733960000 | median=0.733700000 | sd=0.006342555 | iqr=0.009000000 | cv_percent=0.864155
+SCAFFOLD | q=0.25 | mean=0.739240000 | median=0.737800000 | sd=0.004891114 | iqr=0.005700000 | cv_percent=0.661641
+SCAFFOLD | q=0.50 | mean=0.744020000 | median=0.745100000 | sd=0.004005871 | iqr=0.003300000 | cv_percent=0.538409
+SCAFFOLD | q=0.75 | mean=0.752600000 | median=0.753300000 | sd=0.001705872 | iqr=0.002200000 | cv_percent=0.226664
+SCAFFOLD | q=1.00 | mean=0.759480000 | median=0.759900000 | sd=0.001169188 | iqr=0.001900000 | cv_percent=0.153946
+
+execution_time_s
+FedAvg | q=0.10 | mean=1485.390000000 | median=1546.820000000 | sd=240.788359457 | iqr=438.960000000 | cv_percent=16.210447
+FedAvg | q=0.25 | mean=3140.486000000 | median=2840.180000000 | sd=759.415185870 | iqr=1001.700000000 | cv_percent=24.181454
+FedAvg | q=0.50 | mean=5261.932000000 | median=5137.620000000 | sd=1484.277124923 | iqr=2803.020000000 | cv_percent=28.207836
+FedAvg | q=0.75 | mean=5472.516000000 | median=5373.790000000 | sd=286.407706391 | iqr=281.440000000 | cv_percent=5.233565
+FedAvg | q=1.00 | mean=6764.004000000 | median=6762.510000000 | sd=412.947336570 | iqr=614.530000000 | cv_percent=6.105072
+FedProx | q=0.10 | mean=1815.842000000 | median=1765.780000000 | sd=218.857248498 | iqr=310.390000000 | cv_percent=12.052659
+FedProx | q=0.25 | mean=3525.450000000 | median=2959.570000000 | sd=1149.470555060 | iqr=502.030000000 | cv_percent=32.604931
+FedProx | q=0.50 | mean=5350.516000000 | median=5395.590000000 | sd=584.517689707 | iqr=753.870000000 | cv_percent=10.924511
+FedProx | q=0.75 | mean=6207.518000000 | median=6192.090000000 | sd=241.168638654 | iqr=183.800000000 | cv_percent=3.885106
+FedProx | q=1.00 | mean=8586.084000000 | median=8218.020000000 | sd=1093.019331156 | iqr=773.140000000 | cv_percent=12.730126
+SCAFFOLD | q=0.10 | mean=1373.810000000 | median=1375.560000000 | sd=7.728793567 | iqr=3.890000000 | cv_percent=0.562581
+SCAFFOLD | q=0.25 | mean=2469.662000000 | median=2384.230000000 | sd=204.121671975 | iqr=111.210000000 | cv_percent=8.265166
+SCAFFOLD | q=0.50 | mean=4035.872000000 | median=3948.150000000 | sd=197.011971768 | iqr=49.180000000 | cv_percent=4.881522
+SCAFFOLD | q=0.75 | mean=7205.624000000 | median=5858.570000000 | sd=2589.081175906 | iqr=1925.000000000 | cv_percent=35.931394
+SCAFFOLD | q=1.00 | mean=8517.778000000 | median=7318.800000000 | sd=1884.019652822 | iqr=3240.470000000 | cv_percent=22.118675
+
+estimated_energy_kj
+FedAvg | q=0.10 | mean=18.718293875 | median=18.177069938 | sd=2.896697928 | iqr=4.332299563 | cv_percent=15.475224
+FedAvg | q=0.25 | mean=48.383349625 | median=42.651127813 | sd=15.129206897 | iqr=23.797781625 | cv_percent=31.269449
+FedAvg | q=0.50 | mean=84.379844875 | median=81.714527875 | sd=26.802782419 | iqr=48.463280375 | cv_percent=31.764437
+FedAvg | q=0.75 | mean=84.883346837 | median=83.698801063 | sd=5.873135972 | iqr=2.642973625 | cv_percent=6.919067
+FedAvg | q=1.00 | mean=104.856323288 | median=106.602055187 | sd=6.865760826 | iqr=8.495218937 | cv_percent=6.547779
+FedProx | q=0.10 | mean=26.466746150 | median=26.335701688 | sd=3.092420168 | iqr=4.543846563 | cv_percent=11.684172
+FedProx | q=0.25 | mean=55.935710275 | median=45.800046937 | sd=20.740595346 | iqr=9.344925875 | cv_percent=37.079346
+FedProx | q=0.50 | mean=83.321416725 | median=81.180437812 | sd=12.554021269 | iqr=17.917881812 | cv_percent=15.066980
+FedProx | q=0.75 | mean=94.105703250 | median=95.130880062 | sd=3.474019378 | iqr=4.676375750 | cv_percent=3.691614
+FedProx | q=1.00 | mean=133.023089000 | median=129.321974313 | sd=20.350608266 | iqr=11.996012688 | cv_percent=15.298553
+SCAFFOLD | q=0.10 | mean=19.421579563 | median=19.429070437 | sd=0.186690724 | iqr=0.165705500 | cv_percent=0.961254
+SCAFFOLD | q=0.25 | mean=36.411298363 | median=35.525456125 | sd=2.382311478 | iqr=2.217456062 | cv_percent=6.542781
+SCAFFOLD | q=0.50 | mean=60.046621638 | median=59.751836688 | sd=1.595436003 | iqr=0.814236187 | cv_percent=2.656995
+SCAFFOLD | q=0.75 | mean=115.221234788 | median=92.415527375 | sd=48.006807178 | iqr=33.781076313 | cv_percent=41.664896
+SCAFFOLD | q=1.00 | mean=132.569834163 | median=108.474223188 | sd=37.693371872 | iqr=65.036995063 | cv_percent=28.432842
+
+POTENTIAL OUTLIERS
+best_accuracy | FedAvg | q=0.50 | rep=rep2 | value=0.713500000 | below_lower_fence
+best_accuracy | FedAvg | q=0.50 | rep=rep5 | value=0.715200000 | above_upper_fence
+best_accuracy | FedProx | q=0.25 | rep=rep1 | value=0.712900000 | above_upper_fence
+estimated_energy_kj | FedAvg | q=0.75 | rep=rep1 | value=94.158642562 | above_upper_fence
+estimated_energy_kj | FedAvg | q=0.75 | rep=rep3 | value=78.085380563 | below_lower_fence
+estimated_energy_kj | FedProx | q=0.25 | rep=rep5 | value=92.327694250 | above_upper_fence
+estimated_energy_kj | FedProx | q=1.00 | rep=rep5 | value=167.713226187 | above_upper_fence
+estimated_energy_kj | SCAFFOLD | q=0.50 | rep=rep5 | value=62.794498938 | above_upper_fence
+estimated_energy_kj | SCAFFOLD | q=0.75 | rep=rep5 | value=197.366020313 | above_upper_fence
+execution_time_s | FedProx | q=0.25 | rep=rep5 | value=5545.050000000 | above_upper_fence
+execution_time_s | FedProx | q=0.75 | rep=rep4 | value=6602.880000000 | above_upper_fence
+execution_time_s | FedProx | q=1.00 | rep=rep5 | value=10441.760000000 | above_upper_fence
+execution_time_s | SCAFFOLD | q=0.10 | rep=rep2 | value=1362.050000000 | below_lower_fence
+execution_time_s | SCAFFOLD | q=0.10 | rep=rep3 | value=1383.290000000 | above_upper_fence
+execution_time_s | SCAFFOLD | q=0.25 | rep=rep3 | value=2822.200000000 | above_upper_fence
+execution_time_s | SCAFFOLD | q=0.50 | rep=rep5 | value=4386.130000000 | above_upper_fence
+execution_time_s | SCAFFOLD | q=0.75 | rep=rep5 | value=11609.260000000 | above_upper_fence
+
+CAUTION
+With only five repetitions, quartiles and Tukey fences are sensitive to individual observations.
+Flags are diagnostic indications for traceability, not grounds for automatic exclusion.
+The coefficient of variation should only be compared among measurements on compatible scales.
